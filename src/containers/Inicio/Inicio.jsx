@@ -12,7 +12,7 @@ import TypingEffect from "../../components/TypingEffect";
 
 // IMPORT CSS
 // import style from "../inicio/Ini.module.css";
-import styles from '../inicio/Ini.module.css'; 
+import styles from '../Inicio/Ini.module.css'; 
 
 // IMPORT ICONS REACT 
 import { IoIosArrowDown } from "react-icons/io";
