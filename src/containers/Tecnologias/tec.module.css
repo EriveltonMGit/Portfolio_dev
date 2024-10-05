@@ -1,0 +1,137 @@
+/*  AQUI FICA O CSS DO H1 DA SECION TECNOLOGIAS */
+.h1 {
+  width: 90%;
+  height: 10%;
+  font-family: Proelium;
+  font-size: 2.5vw;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 3vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #ff0303,
+    #ff0000,
+    #ffffff,
+    #fdfdfd
+  ); /* Defina as cores do gradiente */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*CARD 1  */
+.container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+
+/* AQUI FICA O CARD 1  */
+.card_1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* AQUI FICA O CSS DOS CARS */
+.p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: rgb(167, 158, 158);
+  font-family: Purista;
+  font-size: 1vw;
+  border: 1px solid white;
+  margin-bottom: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+.p:hover {
+  color: var(--light);
+}
+
+.p .i {
+  font-size: 5vw;
+  transition: 0.5s;
+}
+
+.p:hover .i {
+  color: var(--danger);
+}
+
+/* AQUI FICA O CARD 2  */
+.card_2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/* .card_2 h3 */
+.card_2 h3 {
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 10%;
+  font-family: Proelium;
+  font-size: 2vw;
+}
+
+/* .card_2 p */
+.card_2 p {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-family: SpaceGrotesk-VariableFont;
+  font-size: 1.4vw;
+  padding: 1rem;
+}
+
+/* TEXTO ANIMADO BOLL */
+.ImgBoll {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -40vh;
+  margin-right: -23vw;
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+.ImgBoll img {
+  width:100vw;
+  animation: rotate_boll infinite 20s linear;
+}
+
+@keyframes rotate_boll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

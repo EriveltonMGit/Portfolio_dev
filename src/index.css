@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: var(  --bk-dark);
+
+}
+html {
+  cursor: url('/src/assets/icons/cursor_blue.png'), auto;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #17181f;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, #dc3545 0,#17181f 50%, #17181f, #17181f, #17181f, #17181f13);
+  border-radius: 6px;
+  transition: 05s ease-in-out;
+
+}
+
+
+
+
+/* CORES */
+:root {
+  --bk-dark: #17181f;
+  --blue: #007bff;
+  --indigo: #5011b6;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #15ff00;
+  --cyan: #17a2b8;
+  --white: #ebebeb;
+  --gray: #6c757d31;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #1f212b;
+  --card: #242730;
+}
+
+
+/* FONTES */
+@font-face {
+  font-family:SpaceGrotesk-VariableFont;
+  src: url('assets/fonts/space/SpaceGrotesk-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family:Purista;
+  src: url('assets/fonts/popins/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family:Poppins ;
+  src: url('assets/fonts/popins/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family:gotham-black;
+  src: url('assets/fonts/Gotham/gotham-black.woff2');
+  
+}
+
+@font-face {
+  font-family:Proelium;
+  src: url('/src/assets/fonts/Proelium/Proelium.otf');
+}
+
+
+
+
+
+
+/* // LINHAS TRACEJADAS */
+.container-linhas {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 10vh;
+  pointer-events: none;
+  z-index: 1;
+  
+}
+
+.linhas {
+  flex: 1;
+  height: 100%;
+  border-right: 2px dashed rgba(255, 255, 255, 0.075);
+}
+
+.linhas:last-child {
+  border-right: 2px dashed rgba(255, 255, 255, 0);
+  /* Remove a última borda direita */
+}
+
+
+
+/* AIMAÇÃO DOS ICONS ROLAGEM */

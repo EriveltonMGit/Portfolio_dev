@@ -1,0 +1,211 @@
+/* AQUI FICA O CSS DO PROJETOS */
+.main {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+/* AQUI FICA O ECLIPSE ANIMADO */
+.BkPerfil {
+  position: absolute;
+  left: 0;
+  filter: blur(70px);
+  width: 20vw;
+  margin-left: 5vw;
+  z-index: 1;
+  animation: animation_eclipse infinite 3s linear;
+}
+
+@keyframes animation_eclipse {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* AQUI FICA A ANIMAÇÃO DOS CARS LEFT E RIGTH */
+.cad_animation_left {
+  position: absolute;
+  left: 0;
+  border-right: 1px solid var(--gray);
+  width: 50%;
+  height: 100%;
+  background-color: var(--dark);
+  transition: width 1s ease; /* Adiciona transição à largura */
+  z-index: 5;
+  box-shadow: 1px 1px 1rem black;
+}
+
+.cad_animation_left.show {
+  width: 0px; /* Ajuste para que a div se feche */
+}
+
+/* AQUI FICA A ANIMAÇÃO DOS CARS LEFT E RIGTH */
+.cad_animation_rigth {
+  position: absolute;
+  right: 0;
+  border-left: 1px solid var(--gray);
+  width: 50%;
+  height: 100%;
+  background-color: var(--dark);
+  transition: width 1s ease; /* Adiciona transição à largura */
+  z-index: 5;
+  box-shadow: 1px 1px 1rem black;
+}
+
+.cad_animation_rigth.show {
+  width: 0px; /* Ajuste para que a div se feche */
+}
+
+/* AQUI FICA O BUTAO PARA FECHAR OS CARDS*/
+.button {
+  position: absolute;
+  z-index: 10;
+  padding: 1rem;
+  width: 10vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: none;
+  border-radius: 50%;
+}
+
+.button img {
+  width: 6vw;
+  border-radius: 50%;
+}
+
+.button.show {
+  display: none;
+}
+
+/* AQUI FICA O BTN E PARA ABRIR/fechar OS CARDS */
+.btn_abrir {
+  position: absolute;
+  padding: 1rem;
+  width: 4vw;
+  height: 20vh;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  color: white;
+  border: none;
+  font-size: 3vw;
+  animation: animation_arrow infinite 1s linear;
+}
+
+@keyframes animation_arrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* AQUI FICA O H1 DO CARD 1 */
+.titulo {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Proelium;
+  font-size: 3vw;
+  position: absolute;
+  top: 0;
+  margin-top: -22vh;
+}
+
+/* AQUI FICA O CSS DOS CARDS */
+.card {
+  width: 25%;
+  height: 60%;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  transition: 0.5s;
+  z-index: 2;
+  filter: brightness(20%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+/* aqui fica a  IMG CARD 1 */
+.card_img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 6;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.card_img:hover {
+  border-radius: 10px 10px 0px 0px;
+}
+.card:hover {
+  scale: 1.1;
+  filter: brightness(100%);
+}
+
+.card:hover .card_flu {
+  position: absolute;
+  border: 1px solid var(--gray);
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+  margin-bottom: -10vh;
+  animation: animation_card_flutu 1s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--dark);
+}
+.card p {
+  font-family: SpaceGrotesk-VariableFont;
+  width: 50%;
+  font-size: 1vw;
+}
+
+/* AQUI FICA O CARD FLUTUANTE DOD PROJETOS */
+/* .card_flu */
+.card_flu {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+@keyframes animation_card_flutu {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* AQUI FICA O BUTTON CLOSE DO MODAL */
+.modal_close .card {
+  display: none;
+}
+
