@@ -15,7 +15,8 @@
   margin-bottom: 0px;
 }
 .p p:nth-child(1) {
-  border: 1px solid var(--info);
+  /* background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1)); */
+
   width: 20%;
   height: 100%;
   border-radius: 5px;
@@ -25,6 +26,7 @@
   justify-content: space-around;
   font-size: 1vw;
   font-family: Purista;
+  border: 1px solid var(--gray);
 }
 
 /* .p logo */
@@ -43,7 +45,7 @@
 }
 /* AQUI FICA O 2 P DO SPAN SEJA BEM VINDO */
 .p p:nth-child(2) {
-  /* border: 1px solid var(--info); */
+  border: 1px solid var(--gray);
   width: 75%;
   height: 100%;
   border-radius: 5px;
@@ -53,8 +55,12 @@
   justify-content: space-around;
   font-size: 1vw;
   font-family: Purista;
-  background-color: var(--danger);
-  display: none;
+  /* background-color: var(--danger); */
+  /* display: none; */
+
+  /* background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1)) !important;
+    transition: none !important;
+    white-space: normal;  */
 }
 
 /* AQUI FICA O H1 COM O TITULO NOME DO DESENVOLVEDOR */
@@ -70,6 +76,16 @@
   margin-bottom: 3vh;
   z-index: 1;
   font-family: Proelium;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
 }
 
 /* AQUI FICA A ANIMÇÃO DOS MINI CARDS DA SECTION 1 card 1 */
@@ -82,7 +98,6 @@
   align-items: center;
   justify-content: center;
   mix-blend-mode: multiply;
-  
 }
 .div_img .img {
   width: 30vw;
@@ -90,14 +105,24 @@
 }
 .mini_cards {
   transition: 0.5s;
-  
+ 
 }
 
 .mini_cards:hover {
   box-shadow: 1px 1px 1rem var(--gray);
 }
+
 .mini_cards:hover i {
-  color: var(--info);
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
   perspective: 1000px;
   display: inline-block;
   animation: rotate3D 3s infinite linear;
@@ -112,19 +137,27 @@
   }
 }
 /* .mini_cards b  */
-.mini_cards b{
+.mini_cards b {
   font-size: 1vw;
 }
 .mini_cards:hover b {
-  color: var(--info);
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
 }
 /*.mini_cards p   */
-.mini_cards p{
+.mini_cards p {
   font-size: 1vw;
 }
 .mini_cards:hover p {
   color: var(--white);
-
 }
 
 /* AQUI FICA O CSS D IMAGEM DO PERFIL DO DESENVOLVEDOR */
@@ -148,20 +181,27 @@
   font-family: SpaceGrotesk-VariableFont;
   font-size: 1vw;
   background-color: inherit;
-  color: var(--secondary);
-  transition: 0.5s;
-  border: 1px solid var(--gray);
+  transition: 1s;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  ) !important;
+  transition: none !important;
+  white-space: normal;
+  color: white;
   z-index: 5;
 }
 
 .btn_cv:hover {
-  background-color: var(--teal);
+
   color: var(--light);
   box-shadow: 1px 1px 1rem var(--teal);
+  box-shadow: 0px 8px 40px rgba(50, 0, 255, 0.5);
 }
 
 .btn_cv i {
-  color: var(--teal);
+  color: white;
   transition: 0.5s;
   font-weight: bolder;
 }
@@ -180,29 +220,34 @@
   }
 }
 
-/* AQUI FICA A DID DOS ICONS DO CARD 1  */
+/* AQUI FICA A DIS DOS ICONS DO CARD 1  */
 .icons_social {
-  width: 5%;
-  height: 50vh;
-  
+  width: 20%;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: absolute;
-  flex-direction: column;
- 
-
-  right: 0;
-  margin-right: 2vw;
+  left: 0;
+  bottom: 0;
+  margin-left: 2vw;
   z-index: 10;
+  margin-bottom: 6vh;
 }
 .icons_social a {
   color: var(--secondary);
   font-size: 1.8vw;
-  transition: 0.5s;
+  transition: 1s;
 }
 .icons_social a:hover {
-  color: var(--danger);
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /* AQUI FICA O CARD 2 */
@@ -212,28 +257,27 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(0%) brightness(60%);
+  filter: hue-rotate(250deg);
 }
 
-
 /*  AQUI FICA O ICON SETA - ARROW */
-.arrow{
+.arrow {
   color: white;
   position: absolute;
   bottom: 0;
- font-size: 2.5vw;
- animation:  animation_arrow infinite 1s linear;
- color: var(--white);
+  font-size: 2.5vw;
+  animation: animation_arrow infinite 1s linear;
+  color: var(--white);
 }
 
-
 @keyframes animation_arrow {
-  0%{
-transform: translateY(0%);
+  0% {
+    transform: translateY(0%);
   }
-  50%{
+  50% {
     transform: translateY(-10px);
   }
-  100%{
+  100% {
     transform: translateY(0%);
   }
 }

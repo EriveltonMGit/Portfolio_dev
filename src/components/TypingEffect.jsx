@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 const TypingEffect = () => {
   // Coloque aqui os textos que você quer exibir
   const phrases = [
-    'Olá! Seja bem-vindo! ',
+    'Olá! Bem-vindo! ',
     'Ao meu portfólio',
     'Meu nome é Erivelton Magalhaes.',
     'Sou desenvolvedor front-end.',

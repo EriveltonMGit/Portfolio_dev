@@ -13,11 +13,21 @@ const Button = styled.button`
  font-family:Purista;
  transition:0.5s;
  font-size:0.9vw;
+ font-weight:bolder;
+ background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+
+  color: black;
+
 
 
 
   &:hover{
   box-shadow: 1px 1px 1rem white;
+  color: white;
   }
 
 `

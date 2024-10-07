@@ -15,7 +15,7 @@ const NavBar = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border:1px solid red; */
+   
   }
 
   & a {
@@ -65,13 +65,6 @@ const NavBar = styled.ul`
         color:var(--info);
       }
   }
-
-  
-
-
-
-
-
 `;
 
 export default NavBar;

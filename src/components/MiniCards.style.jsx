@@ -23,14 +23,20 @@ const MiniCard = styled.div`
   & b{
     font-family:Purista;
     transition:0.5s;
-    color:var( --danger);
+    background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1));
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+ 
   }
 
 
   & .bi {
     color: var( --gray);
-    font-size:2vw;
-    transition:0.5s;
+    font-size:1.8vw;
+    transition:3s;
   }
  
 

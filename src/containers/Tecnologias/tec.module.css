@@ -11,17 +11,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: linear-gradient(
-    90deg,
-    #ffffff,
-    #ff0303,
-    #ff0000,
-    #ffffff,
-    #fdfdfd
-  ); /* Defina as cores do gradiente */
+  background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  color: transparent; 
+  
 }
 
 /*CARD 1  */
@@ -119,7 +113,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
 }
 .ImgBoll img {

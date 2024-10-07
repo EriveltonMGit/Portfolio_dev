@@ -32,7 +32,12 @@
   color: var(--gray); /* Ícones ímpares: cor branca */
 }
 .card_1 div i:nth-child(even) {
-  color: var(--danger); /* Ícones pares: cor preta */
+  background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1));
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
 }
 
 @keyframes animation_icons {
@@ -62,7 +67,7 @@
 
 /* bk_filter_rigth */
 .bk_filter_rigth {
-  width: 15%;
+  width: 20%;
   height: 100%;
   position: absolute;
   right: 0;
@@ -73,7 +78,7 @@
     #17181f 70%,
     #17181f 0%
   );
-  z-index: 4;
+  z-index: 6;
 }
 
 /* AQUI FICA O CSS DO CARD 1 SECTION SOBRE */

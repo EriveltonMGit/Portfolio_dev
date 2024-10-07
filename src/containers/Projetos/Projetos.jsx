@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 
 import WrapperProjetos from "../../components/WrapperProjetos";
 import Button from "../../components/Button.style";
@@ -76,15 +76,16 @@ function Projetos() {
               img: ImgCrd1,
               descricao:
                 "Esta é uma página desenvolvida em Angular para demonstrar minhas habilidades em design e desenvolvimento web. O projeto apresenta um layout moderno e responsivo, focando na usabilidade e na experiência do usuário. ",
-                ferramentas:"ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
-                a: "https://web-desing-page.netlify.app",
-
+              ferramentas:
+                "ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
+              a: "https://web-desing-page.netlify.app",
+              li: "https://github.com/EriveltonMGit/Web_Page",
+              
             })
           }
         >
           <div className={style.card_img}>
             <img src={ImgCrd1} alt="" />
-            
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
@@ -99,10 +100,11 @@ function Projetos() {
             abrirCard({
               img: ImgCrd2,
               descricao:
-                "Este portfólio foi desenvolvido utilizando Angular para demonstrar minhas habilidades em design e desenvolvimento web. O projeto apresenta um layout moderno e totalmente responsivo, com foco em usabilidade e experiência do usuário (UX).  ",
-                ferramentas:"ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
-                a: "https://portfoolio-dv.netlify.app/",
-
+                "Este portfólio foi desenvolvido utilizando Angular para demonstrar minhas habilidades em design e desenvolvimento web. O projeto apresenta um layout moderno e totalmente responsivo, com foco em usabilidade e experiência do usuário.  ",
+              ferramentas:
+                "ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
+              a: "https://portfoolio-dv.netlify.app/",
+              li: "https://github.com/EriveltonMGit/portfolio",
             })
           }
         >
@@ -122,15 +124,15 @@ function Projetos() {
               img: ImgCrd3,
               descricao:
                 "Esta é uma página desenvolvida em Angular para o projeto Código Certo, focado em desenvolvimento web. O projeto apresenta um layout moderno e responsivo, priorizando a usabilidade e a experiência do usuário.",
-                ferramentas:"ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
-                a: "https://codigo-certo.netlify.app",
-
+              ferramentas:
+                "ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
+              a: "https://codigo-certo.netlify.app",
+              li: "https://github.com/EriveltonMGit/Codigo_certo",
             })
           }
         >
           <div className={style.card_img}>
             <img src={ImgCrd3} alt="" />
-            
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
@@ -141,22 +143,22 @@ function Projetos() {
 
       {/* SEGUNDA SEÇÃO DE CARDS */}
       <div className={style.main}>
-      <div
+        <div
           className={style.card}
           onClick={() =>
             abrirCard({
               img: ImgCrd4,
               descricao:
                 "Esta é uma página desenvolvida em Angular para demonstrar minhas habilidades em design e desenvolvimento web. O projeto apresenta um layout moderno e responsivo, focando na usabilidade e na experiência do usuário. ",
-                ferramentas:"ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
-                a: "https://web-desing-page.netlify.app",
-
+              ferramentas:
+                "ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
+              a: "https://web-desing-page.netlify.app",
+              li: "https://github.com/EriveltonMGit/Web_designer",
             })
           }
         >
           <div className={style.card_img}>
             <img src={ImgCrd4} alt="" />
-            
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
@@ -172,15 +174,15 @@ function Projetos() {
               img: ImgCrd5,
               descricao:
                 "Esta é uma página desenvolvida em Angular para demonstrar minhas habilidades em design e desenvolvimento web. O projeto apresenta um layout moderno e responsivo, focando na usabilidade e na experiência do usuário. ",
-                ferramentas:"ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
-                a: "https://landing-clinica.netlify.app",
-
+              ferramentas:
+                "ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
+              a: "https://landing-clinica.netlify.app",
+              li: "https://github.com/EriveltonMGit/Project_clinica",
             })
           }
         >
           <div className={style.card_img}>
             <img src={ImgCrd5} alt="" />
-            
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
@@ -196,15 +198,15 @@ function Projetos() {
               img: ImgCrd6,
               descricao:
                 "Esta é uma página desenvolvida em Angular para demonstrar minhas habilidades em design e desenvolvimento web. O projeto apresenta um layout moderno e responsivo, focando na usabilidade e na experiência do usuário. ",
-                ferramentas:"ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
-                a: "https://hamburgueria-do-chef.netlify.app",
-
+              ferramentas:
+                "ANGULAR, HTML, SCSS, JAVASCRIPT, BOOSTRAP, BOOSTRAP ICONS, NETFLY, EXPRESS, KARMA, TYPESCRIPT, CYPRESS",
+              a: "https://hamburgueria-do-chef.netlify.app",
+              li: "https://github.com/EriveltonMGit/Burger_grill",
             })
           }
         >
           <div className={style.card_img}>
             <img src={ImgCrd6} alt="" />
-            
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
@@ -215,28 +217,39 @@ function Projetos() {
 
       {/* MODAL FICA AQUI*/}
       {selectedCard && (
-        <Modal $isVisible={selectedCard !== null}>
-          {selectedCard && (
-            <>
-              <img
-                src={selectedCard.img}
-                alt="Imagem do projeto"
-                className="modal-img"
-              />
-              <div className="modal-content">
-                <h2>Detalhes do Projeto</h2>
-                <p>{selectedCard.descricao}</p>
-                <h2>Ferramentas e Tecnologias Utilizadas:</h2>
-                <b>{selectedCard.ferramentas}</b>
-                <button onClick={fecharModal} className={style.modal_close}>
-                  x
-                </button>
-                <a href={selectedCard.a}>Clique e veja o projeto</a>
-              </div>
-            </>
-          )}
-        </Modal>
-      )}
+  <Modal $isVisible={selectedCard !== null}>
+    {selectedCard && (
+      <>
+        <img
+          src={selectedCard.img}
+          alt="Imagem do projeto"
+          className="modal-img"
+        />
+        <div className="modal-content">
+          <h2>Detalhes do Projeto</h2>
+          <p>{selectedCard.descricao}</p>
+          <h2>Ferramentas e Tecnologias Utilizadas:</h2>
+          <b>{selectedCard.ferramentas}</b>
+          <button onClick={fecharModal} className={style.modal_close}>
+            x
+          </button>
+          {/* Criar uma div para envolver os links */}
+          <div className={style.modalLinks}>
+            <a href={selectedCard.a} target="_blank" rel="noopener noreferrer">
+              Projeto
+            </a>
+            {selectedCard.li && (
+              <a className="git" href={selectedCard.li} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            )}
+          </div>
+        </div>
+      </>
+    )}
+  </Modal>
+)}
+
 
       <img src={BkPerfil} className={style.BkPerfil} alt="" />
     </WrapperProjetos>

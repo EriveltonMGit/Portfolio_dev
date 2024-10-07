@@ -11,7 +11,7 @@ import Inicio from "./containers/Inicio/Inicio.jsx";
 import Sobre from "./containers/Sobre/Sobre.jsx";
 import Tecnologias from "./containers/Tecnologias/Tecnologias.jsx";
 import Projetos from "./containers/Projetos/Projetos.jsx";
-
+import Footer from "./containers/Footer/Footer.jsx"
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Nav />
@@ -19,6 +19,7 @@ createRoot(document.getElementById("root")).render(
     <Sobre />
     <Tecnologias />
     <Projetos />
+    <Footer />
   </StrictMode>
 );
 // Inicializa o AOS
