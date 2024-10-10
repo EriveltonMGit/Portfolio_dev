@@ -1,3 +1,18 @@
+/* AQUI FICA O CSS DO SOBRE */
+.sobre{
+  width: 100%;
+  height: 120vh;
+}
+
+/* AQUI FICA A CONFIG CARDS 1 E 2 */
+.cards{
+  width: 46%;
+  height: 65vh;
+  z-index: 3;
+}
+
+
+
 .card_1 {
   width: 100%;
   height: 15vh;

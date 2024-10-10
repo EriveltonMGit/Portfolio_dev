@@ -64,7 +64,25 @@ const NavBar = styled.ul`
     &:hover .bi{
         color:var(--info);
       }
+
+@media (max-width:480px) {
+  
+  border: 1px solid red;
+  height: 10vh;
+
+
+}
+      
   }
+
+
+
+
+
+
+
+
+
 `;
 
 export default NavBar;

@@ -11,7 +11,8 @@ const WrapperTecnologias = styled.section`
   position: relative;
   z-index:1;
   
-  /* border:1px solid white; */
+  
+  
 
 
 `;

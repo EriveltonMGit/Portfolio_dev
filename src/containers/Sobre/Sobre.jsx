@@ -10,7 +10,7 @@ import BkPerfil from "../../assets/image/img_perfil_sobre/Elipse-1.webp";
 
 function Sobre() {
   return (
-    <WrapperSobre id="sobre">
+    <WrapperSobre id="sobre" className={style.sobre}>
       <div className={style.card_1}>
         {/* AQUI FICA A ANIMÇÃO DO ICONS ROLANDO PARA A ESQUERDA -LEFT */}
         <p className={style.bk_filter}></p>
@@ -44,7 +44,7 @@ function Sobre() {
 
       {/* AQUI FICA OS DOIS CARDS DA SECTION SOBRE */}
 
-      <Card data-aos="fade-right" data-aos-duration="3000">
+      <Card className={style.cards} data-aos="fade-right" data-aos-duration="3000">
         <h1 className={style.titulo}>
           Olá, eu sou Erivelton Magalhães{" "}
           <i className="bi bi-person-badge-fill"></i>
@@ -63,7 +63,7 @@ function Sobre() {
         </p>
       </Card>
       {/* AQUI FICA A  IMAGEM DO CARD 2 PERFIl */}
-      <Card data-aos="fade-up" data-aos-duration="1000">
+      <Card className={style.cards} data-aos="fade-up" data-aos-duration="1000">
         <div
           className={style.div_img_perfil}
           data-aos="zoom-out-up"

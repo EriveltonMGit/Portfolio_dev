@@ -1,0 +1,107 @@
+/* footer.module.css */
+
+/* Estilos principais do footer */
+.footer {
+  
+  /* border-bottom: 1px solid #0056b3; */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.footerColumn {
+  flex: 1;
+  width: 20%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerTitle {
+    font-family:Proelium;
+    font-size:2vw;
+    background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1));
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+}
+
+.footerText {
+    font-family:SpaceGrotesk-VariableFont;
+    color: white;
+    font-size: 1.4vw;
+}
+
+.footerList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footerList li {
+  margin-bottom: 10px;
+}
+
+.footerList li i {
+  margin-right: 8px;
+}
+
+.footerList a {
+    font-family:SpaceGrotesk-VariableFont;
+    color: white;
+    font-size: 1.2vw;
+    transition: 0.5s;
+}
+
+.footerList a:hover {
+  color: #0056b3;
+}
+
+/* Links sociais */
+.socialLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.socialLinks a {
+  color: white;
+  font-size: 2vw;
+  border-radius: 4px;
+}
+
+.socialLinks a:hover {
+  color: #007bff;
+
+
+}
+
+.footer .bi{
+    color: #007bff;
+}
+/* Copyright */
+.copyright {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: SpaceGrotesk-VariableFont;
+  font-size: 1.2vw;
+}
+

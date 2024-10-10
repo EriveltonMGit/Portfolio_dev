@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 // IMPORT COMPONENTS
 import Wrapper from "../../components/Wrapper.style"; //component principal nav bar
@@ -36,7 +36,7 @@ function Nav() {
 
   return (
     // NAV BAR - MENU
-    <Wrapper>
+    <Wrapper className={style.nav}>
       {/* Aqui fica a border bottom menu */}
       <SpanBorder></SpanBorder>
 
@@ -83,6 +83,8 @@ function Nav() {
           </a>
         </li>
       </NavBar>
+      {/* BUTTON DEVICE */}
+      <button className={style.btn_device}><i className="bi bi-list"></i></button>
 
       {/* AQUI FICA O ION DA LUA E SOL */}
       <button className={style.lua}>

@@ -7,6 +7,7 @@ const MiniCard = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  flex-wrap:wrap;
   border-radius: 10px;
   border: 1px solid var(--gray);
   background-image: linear-gradient(

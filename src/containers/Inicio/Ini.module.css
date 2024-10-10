@@ -1,7 +1,54 @@
+/* AQUI FICA O CSS PRINCIPAL */
+.inicio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* AQUI FICA O CARD */
+.card {
+  position: relative;
+  width: 46%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+.card_2{
+  position: relative;
+  width: 46%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+/* spam border */
+.span {
+  width: 40%;
+  height: 0.5vh;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 255, 1), #9500ff1a);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* ANIMAÇÃO DO  ICON REACT */
 .p {
   width: 100%;
-  height: 20%;
+  height: 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,14 +58,12 @@
   top: 0;
   margin-top: 2vh;
 }
-.p p {
-  margin-bottom: 0px;
-}
+
 .p p:nth-child(1) {
   /* background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1)); */
 
   width: 20%;
-  height: 100%;
+  height: 50%;
   border-radius: 5px;
   font-size: 1vw;
   display: flex;
@@ -31,7 +76,7 @@
 
 /* .p logo */
 .p img {
-  width: 1.5vw;
+  width: 1.4vw;
   animation: rotate_logo infinite 10s linear;
 }
 
@@ -47,7 +92,7 @@
 .p p:nth-child(2) {
   border: 1px solid var(--gray);
   width: 75%;
-  height: 100%;
+  height: 50%;
   border-radius: 5px;
   font-size: 1vw;
   display: flex;
@@ -55,21 +100,20 @@
   justify-content: space-around;
   font-size: 1vw;
   font-family: Purista;
-  /* background-color: var(--danger); */
-  /* display: none; */
-
-  /* background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1)) !important;
-    transition: none !important;
-    white-space: normal;  */
 }
 
-/* AQUI FICA O H1 COM O TITULO NOME DO DESENVOLVEDOR */
+/* AQUI FICA O H1 COM O TITULO NOME DO DESENVOLVEDOR  ANIMADO*/
 .h1 {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  margin-top: 15vh;
   width: 100%;
-  height: 50%;
+  height: 15%;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2.2vw;
   font-weight: 600;
   letter-spacing: 5px;
@@ -88,83 +132,38 @@
   white-space: normal;
 }
 
-/* AQUI FICA A ANIMÇÃO DOS MINI CARDS DA SECTION 1 card 1 */
-.div_img {
-  width: 100%;
-  height: 100%;
+/* AQUI FICA O BUTTON COMPARTILHAR */
+.btn_compartilhar {
   border-radius: 10px;
-  z-index: 2;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  margin-top: 30vh;
+  left: 0;
+  padding: 0.5rem;
+  width: 30%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  mix-blend-mode: multiply;
-}
-.div_img .img {
-  width: 30vw;
-  mix-blend-mode: multiply;
-}
-.mini_cards {
+  justify-content: space-around;
+  font-family: SpaceGrotesk-VariableFont;
+  font-size: 1vw;
+  background-color: inherit;
+  color: var(--secondary);
   transition: 0.5s;
- 
+  border: 1px solid var(--gray);
+  z-index: 5;
 }
-
-.mini_cards:hover {
+/* BTN COMPARTILHAR HOVER */
+.btn_compartilhar:hover {
+  background-color: var(--gray);
+  color: var(--light);
   box-shadow: 1px 1px 1rem var(--gray);
 }
-
-.mini_cards:hover i {
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 255, 1),
-    rgba(150, 0, 255, 1)
-  );
-  -webkit-background-clip: text; /* Para Safari */
-  -webkit-text-fill-color: transparent; /* Para Safari */
-  color: transparent; /* Para outros navegadores */
-  transition: none !important; /* Mantém a transição como none */
-  white-space: normal;
-  perspective: 1000px;
-  display: inline-block;
-  animation: rotate3D 3s infinite linear;
-}
-
-@keyframes rotate3D {
-  0% {
-    transform: rotateX(0);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-/* .mini_cards b  */
-.mini_cards b {
-  font-size: 1vw;
-}
-.mini_cards:hover b {
-  background: linear-gradient(
-    to left,
-    rgba(0, 0, 255, 1),
-    rgba(150, 0, 255, 1)
-  );
-  -webkit-background-clip: text; /* Para Safari */
-  -webkit-text-fill-color: transparent; /* Para Safari */
-  color: transparent; /* Para outros navegadores */
-  transition: none !important; /* Mantém a transição como none */
-  white-space: normal;
-}
-/*.mini_cards p   */
-.mini_cards p {
-  font-size: 1vw;
-}
-.mini_cards:hover p {
-  color: var(--white);
-}
-
-/* AQUI FICA O CSS D IMAGEM DO PERFIL DO DESENVOLVEDOR */
-.img_perfil {
-  width: 40vw;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
+.btn_compartilhar i {
+  color: var(--teal);
+  animation: slide_arrow infinite 3s linear;
+  transition: 0.5s;
+  font-weight: bolder;
 }
 
 /* AQUI FICA O BOTÃO DOWNLOND CV */
@@ -172,7 +171,9 @@
   border-radius: 10px;
   background-color: white;
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 35%;
+  margin-top: 30vh;
   padding: 0.5rem;
   width: 30%;
   display: flex;
@@ -191,10 +192,10 @@
   white-space: normal;
   color: white;
   z-index: 5;
+  transition: 0.5s;
 }
 
 .btn_cv:hover {
-
   color: var(--light);
   box-shadow: 1px 1px 1rem var(--teal);
   box-shadow: 0px 8px 40px rgba(50, 0, 255, 0.5);
@@ -220,39 +221,113 @@
   }
 }
 
-/* AQUI FICA A DIS DOS ICONS DO CARD 1  */
-.icons_social {
-  width: 20%;
-  height: 10vh;
+/* AQUI FICA O CSS DOS MINI  CARDS */
+.div_mini_cards {
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-left: 2vw;
-  z-index: 10;
-  margin-bottom: 6vh;
+  transition: 0.5s;
 }
-.icons_social a {
-  color: var(--secondary);
-  font-size: 1.8vw;
-  transition: 1s;
-}
-.icons_social a:hover {
+
+/* AQUI FICA A ANIMÇÃO DOS MINI CARDS DA SECTION 1 card 1 */
+
+/* .mini_cards b  */
+.mini_cards b {
+  font-size: 1vw;
   background: linear-gradient(
     to left,
     rgba(0, 0, 255, 1),
     rgba(150, 0, 255, 1)
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+}
+.mini_cards:hover b {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+}
+/*.mini_cards p   */
+.mini_cards p {
+  font-size: 1vw;
+  font-family: SpaceGrotesk-VariableFont;
+  color: var(--secondary);
+}
+.mini_cards:hover p {
+  color: var(--white);
+}
+
+/* mini_cards */
+.mini_cards {
+  width: 23%;
+  height: 70%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  background-image: linear-gradient(
+    10deg,
+    black 0%,
+    #000000dd 20%,
+    #00000032 100%
+  );
+  text-align: center;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+.mini_cards:hover {
+  box-shadow: 1px 1px 1rem var(--gray);
+}
+/* .mini_cards i */
+.mini_cards i {
+  color: white;
+}
+.mini_cards:hover i {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+  perspective: 1000px;
+  display: inline-block;
+  animation: rotate3D 3s infinite linear;
+}
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 /* AQUI FICA O CARD 2 */
 .img {
-  width: 30vw;
+  width: 60%;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,5 +354,432 @@
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+/* AQUI FICA O CSS DOS ICONS DO CARD 1  */
+.icons_social {
+  width: 20%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 2vw;
+  z-index: 10;
+  margin-bottom: 2vh;
+}
+.icons_social a {
+  color: var(--secondary);
+  font-size: 1.8vw;
+  transition: 1s;
+}
+.icons_social a:hover {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* AQUI FICA O MIDIA SCREEN 480PX */
+@media (max-width: 480px) {
+  /* AQUI FICA O CSS PRINCIPAL */
+  .inicio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  /* AQUI FICA O CARD */
+  .card {
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 3;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+  }
+  .card_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+  }
+  /* spam border */
+  .span {
+    width: 60%;
+    height: 0.7vh;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 255, 1), #9500ff07);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 2vw;
+  }
+
+  /* ANIMAÇÃO DO  ICON REACT */
+  .p {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  .p p:nth-child(1) {
+    /* background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1)); */
+
+    width: 30%;
+    height: 50%;
+    border-radius: 5px;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 4vw;
+    font-family: Purista;
+    border: 1px solid var(--gray);
+  }
+
+  /* .p logo */
+  .p img {
+    width: 5vw;
+    animation: rotate_logo infinite 10s linear;
+  }
+
+  @keyframes rotate_logo {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /* AQUI FICA O 2 P DO SPAN SEJA BEM VINDO */
+  .p p:nth-child(2) {
+    border: 1px solid var(--gray);
+    width: 60%;
+    height: 50%;
+    border-radius: 5px;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 4vw;
+    font-family: Purista;
+    margin-bottom: 0;
+  }
+
+  /* AQUI FICA O H1 COM O TITULO NOME DO DESENVOLVEDOR  ANIMADO*/
+  .h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 15vh;
+    width: 100%;
+    height: 10%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 3vh;
+    z-index: 1;
+    font-family: Proelium;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 255, 1),
+      rgba(150, 0, 255, 1)
+    );
+    -webkit-background-clip: text; /* Para Safari */
+    -webkit-text-fill-color: transparent; /* Para Safari */
+    color: transparent; /* Para outros navegadores */
+    transition: none !important; /* Mantém a transição como none */
+    white-space: normal;
+  }
+
+  /* AQUI FICA O BUTTON COMPARTILHAR */
+  .btn_compartilhar {
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    margin-top: 28vh;
+    height: 5vh;
+    margin-left: 25%;
+    padding: 0.5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: SpaceGrotesk-VariableFont;
+    font-size: 4.5vw;
+    background-color: inherit;
+    color: var(--secondary);
+    transition: 0.5s;
+    border: 1px solid var(--gray);
+    z-index: 5;
+  }
+  /* BTN COMPARTILHAR HOVER */
+  .btn_compartilhar:hover {
+    background-color: var(--gray);
+    color: var(--light);
+    box-shadow: 1px 1px 1rem var(--gray);
+  }
+  .btn_compartilhar i {
+    color: var(--teal);
+    animation: slide_arrow infinite 3s linear;
+    transition: 0.5s;
+    font-weight: bolder;
+  }
+
+  /* AQUI FICA O BOTÃO DOWNLOND CV */
+  .btn_cv {
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    margin-top: 36vh;
+    padding: 0.5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: SpaceGrotesk-VariableFont;
+    font-size: 4.5vw;
+    background-color: inherit;
+    transition: 1s;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 255, 1),
+      rgba(150, 0, 255, 1)
+    ) !important;
+    transition: none !important;
+    white-space: normal;
+    color: white;
+    z-index: 5;
+    transition: 0.5s;
+  }
+
+  .btn_cv:hover {
+    color: var(--light);
+    box-shadow: 1px 1px 1rem var(--teal);
+    box-shadow: 0px 8px 40px rgba(50, 0, 255, 0.5);
+  }
+
+  .btn_cv i {
+    color: white;
+    transition: 0.5s;
+    font-weight: bolder;
+  }
+  .btn_cv:hover i {
+    color: var(--light);
+  }
+  @keyframes slide_arrow {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* AQUI FICA O CSS DOS MINI  CARDS */
+  .div_mini_cards {
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+
+ /* mini_cards */
+ .mini_cards {
+  width: 45%;
+  height: 40%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  background-image: linear-gradient(
+    10deg,
+    black 0%,
+    #000000dd 20%,
+    #00000032 100%
+  );
+  text-align: center;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+.mini_cards:hover {
+  box-shadow: 1px 1px 1rem var(--gray);
+}
+/* .mini_cards i */
+.mini_cards i {
+  color: white;
+  font-size: 7vw;
+}
+.mini_cards:hover i {
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 255, 1),
+    rgba(150, 0, 255, 1)
+  );
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+  perspective: 1000px;
+  display: inline-block;
+  animation: rotate3D 3s infinite linear;
+}
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+  /* AQUI FICA A ANIMÇÃO DOS MINI CARDS DA SECTION 1 card 1 */
+
+  /* .mini_cards b  */
+  .mini_cards b {
+    font-size: 1vw;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 255, 1),
+      rgba(150, 0, 255, 1)
+    );
+    -webkit-background-clip: text; /* Para Safari */
+    -webkit-text-fill-color: transparent; /* Para Safari */
+    color: transparent; /* Para outros navegadores */
+    transition: none !important; /* Mantém a transição como none */
+    white-space: normal;
+    font-size: 5vw;
+  }
+  .mini_cards:hover b {
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 255, 1),
+      rgba(150, 0, 255, 1)
+    );
+    -webkit-background-clip: text; /* Para Safari */
+    -webkit-text-fill-color: transparent; /* Para Safari */
+    color: transparent; /* Para outros navegadores */
+    transition: none !important; /* Mantém a transição como none */
+    white-space: normal;
+  }
+  /*.mini_cards p   */
+  .mini_cards p {
+    font-size: 4vw;
+    font-family: SpaceGrotesk-VariableFont;
+    color: var(--secondary);
+  }
+  .mini_cards:hover p {
+    color: var(--white);
+  }
+
+ 
+  /* AQUI FICA O CARD 2 */
+  .img {
+    width: 60%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0%) brightness(60%);
+    filter: hue-rotate(250deg);
+  }
+
+  /*  AQUI FICA O ICON SETA - ARROW */
+  .arrow {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 18vw;
+    top: 180vh;
+    animation: animation_arrow infinite 1s linear;
+    color: var(--white);
+  }
+
+  @keyframes animation_arrow {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  /* AQUI FICA O CSS DOS ICONS DO CARD 1  */
+  .icons_social {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+   margin-bottom: -42vh;
+  }
+  .icons_social a {
+    color: var(--secondary);
+    font-size: 8vw;
+    transition: 1s;
+  }
+  .icons_social a:hover {
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 255, 1),
+      rgba(150, 0, 255, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 }
