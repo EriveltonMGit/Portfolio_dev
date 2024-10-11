@@ -403,7 +403,7 @@
   .card {
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: 140vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -411,7 +411,7 @@
     border-radius: 10px;
     z-index: 3;
     flex-wrap: wrap;
-    margin-top: 10vh;
+    margin-top: 12vh;
   }
   .card_2{
     display: flex;
@@ -432,6 +432,7 @@
     left: 0;
     top: 0;
     margin-left: 2vw;
+    display: none;
   }
 
   /* ANIMAÇÃO DO  ICON REACT */
@@ -441,6 +442,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 1vh;
     color: white;
     position: absolute;
     left: 0;
@@ -451,16 +454,18 @@
   .p p:nth-child(1) {
     /* background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1)); */
 
-    width: 30%;
+    width: 60%;
     height: 50%;
     border-radius: 5px;
     font-size: 1vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5vw;
     font-size: 4vw;
-    font-family: Purista;
+    font-family:SpaceGrotesk-VariableFont;
     border: 1px solid var(--gray);
+    display: none;
   }
 
   /* .p logo */
@@ -488,7 +493,7 @@
     align-items: center;
     justify-content: space-around;
     font-size: 4vw;
-    font-family: Purista;
+    font-family:SpaceGrotesk-VariableFont;
     margin-bottom: 0;
   }
 
@@ -497,15 +502,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 15vh;
+    margin-top: 10vh;
     width: 100%;
-    height: 10%;
+    height: 15%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
     font-weight: 600;
     letter-spacing: 5px;
     margin-bottom: 3vh;
@@ -529,7 +534,7 @@
     background-color: white;
     position: absolute;
     bottom: 0;
-    margin-top: 28vh;
+    margin-top: 33vh;
     height: 5vh;
     margin-left: 25%;
     padding: 0.5rem;
@@ -565,7 +570,7 @@
     position: absolute;
     top: 0;
     left: 25%;
-    margin-top: 36vh;
+    margin-top: 40vh;
     padding: 0.5rem;
     width: 50%;
     display: flex;
@@ -736,10 +741,11 @@
     color: white;
     position: absolute;
     bottom: 0;
-    font-size: 18vw;
-    top: 180vh;
+    font-size: 16vw;
+    top: 200vh;
     animation: animation_arrow infinite 1s linear;
     color: var(--white);
+    z-index: 9;
   }
 
   @keyframes animation_arrow {
@@ -765,7 +771,7 @@
     left: 0;
     bottom: 0;
     z-index: 10;
-   margin-bottom: -42vh;
+   margin-bottom: -62vh;
   }
   .icons_social a {
     color: var(--secondary);
