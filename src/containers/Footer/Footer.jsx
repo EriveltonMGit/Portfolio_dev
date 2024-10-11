@@ -52,7 +52,7 @@ function Footer() {
                 <a href="mailto:email@example.com"><i className="bi bi-envelope-arrow-up"></i>{" "}Email: Acesse</a>
               </li>
               <li>
-               <a href=""> <i className="bi bi-telephone-outbound-fill"></i> (61) 98157-9569</a>
+               <a href=""> <i className="bi bi-telephone-outbound-fill"></i>Contato</a>
               </li>
               <li>
                

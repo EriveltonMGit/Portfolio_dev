@@ -62,16 +62,17 @@
 .p p:nth-child(1) {
   /* background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1)); */
 
-  width: 20%;
+  width: 50%;
   height: 50%;
   border-radius: 5px;
   font-size: 1vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:space-between;
   font-size: 1vw;
   font-family: Purista;
   border: 1px solid var(--gray);
+  padding: 1rem;
 }
 
 /* .p logo */
@@ -88,19 +89,7 @@
     transform: rotate(360deg);
   }
 }
-/* AQUI FICA O 2 P DO SPAN SEJA BEM VINDO */
-.p p:nth-child(2) {
-  border: 1px solid var(--gray);
-  width: 75%;
-  height: 50%;
-  border-radius: 5px;
-  font-size: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1vw;
-  font-family: Purista;
-}
+
 
 /* AQUI FICA O H1 COM O TITULO NOME DO DESENVOLVEDOR  ANIMADO*/
 .h1 {
@@ -466,7 +455,7 @@
     font-size: 4vw;
     font-family:SpaceGrotesk-VariableFont;
     border: 1px solid var(--gray);
-    display: none;
+ 
   }
 
   /* .p logo */
@@ -483,20 +472,7 @@
       transform: rotate(360deg);
     }
   }
-  /* AQUI FICA O 2 P DO SPAN SEJA BEM VINDO */
-  .p p:nth-child(2) {
-    border: 1px solid var(--gray);
-    width: 60%;
-    height: 50%;
-    border-radius: 5px;
-    font-size: 1vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 4vw;
-    font-family:SpaceGrotesk-VariableFont;
-    margin-bottom: 0;
-  }
+ 
 
   /* AQUI FICA O H1 COM O TITULO NOME DO DESENVOLVEDOR  ANIMADO*/
   .h1 {
@@ -772,8 +748,8 @@
     left: 0;
     bottom: 0;
     z-index: 10;
-    margin-top: 10vh;
-   margin-bottom: -72vh;
+    margin-bottom: 50vh;
+
   }
   .icons_social a {
     color: var(--secondary);

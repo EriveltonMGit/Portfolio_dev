@@ -25,7 +25,7 @@ import FrameImg from "../../assets/frame/boll_animation.gif"
 
 function Inicio() {
   return (
-    <section className={styles.inicio} id="inicio">
+    <section className={styles.inicio} id="inicio" data-aos="zoom-out-down" data-aos-duration="2500">
      
       {/* CARD 1 */}
       <main className={styles.card}>
@@ -34,10 +34,8 @@ function Inicio() {
         {/* AQUI FICA O TEXTO COM O NOME DO DESENVOLVEDOR */}
         <div className={style.titulo}>
           <div className={styles.p}>
-            <p>
-              REACT <img src={ImgRotate} alt="" />
-            </p>
-            <p> SEJA BEM-VINDO  </p>
+            
+            <p> SEJA BEM-VINDO <img src={ImgRotate} alt="" /> </p>
           </div>
 
 
