@@ -1,5 +1,5 @@
-import WrapperSobre from "../../components/WrapperSobre";
-import Card from "../../components/Card.style";
+// import WrapperSobre from "../../components/WrapperSobre";
+// import Card from "../../components/Card.style";
 
 // IMPORT STYLES CSS
 import style from "../../containers/Sobre/sobre.module.css";
@@ -10,7 +10,7 @@ import BkPerfil from "../../assets/image/img_perfil_sobre/Elipse-1.webp";
 
 function Sobre() {
   return (
-    <WrapperSobre id="sobre" className={style.sobre}>
+    <main id="sobre" className={style.main}>
       <div className={style.card_1}>
         {/* AQUI FICA A ANIMÇÃO DO ICONS ROLANDO PARA A ESQUERDA -LEFT */}
         <p className={style.bk_filter}></p>
@@ -44,7 +44,7 @@ function Sobre() {
 
       {/* AQUI FICA OS DOIS CARDS DA SECTION SOBRE */}
 
-      <Card className={style.cards} data-aos="fade-right" data-aos-duration="3000">
+      <div className={style.cards} data-aos="fade-right" data-aos-duration="3000">
         <h1 className={style.titulo}>
           Olá, eu sou Erivelton Magalhães{" "}
           <i className="bi bi-person-badge-fill"></i>
@@ -61,9 +61,9 @@ function Sobre() {
           melhorar meus projetos, tornando a experiência do usuário agradável e
           atrativa.
         </p>
-      </Card>
+      </div>
       {/* AQUI FICA A  IMAGEM DO CARD 2 PERFIl */}
-      <Card className={style.cards} data-aos="fade-up" data-aos-duration="1000">
+      <div className={style.cards} data-aos="fade-up" data-aos-duration="1000">
         <div
           className={style.div_img_perfil}
           data-aos="zoom-out-up"
@@ -80,8 +80,8 @@ function Sobre() {
         <div className={style.bk_perfil}>
           <img src={BkPerfil} alt="" />
         </div>
-      </Card>
-    </WrapperSobre>
+      </div>
+    </main>
   );
 }
 export default Sobre;
