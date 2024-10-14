@@ -25,7 +25,9 @@ import FrameImg from "../../assets/frame/boll_animation.gif"
 
 function Inicio() {
   return (
-    <section className={styles.inicio} id="inicio" data-aos="zoom-out-down" data-aos-duration="2500">
+    <section className={styles.inicio} id="inicio"
+    //  data-aos="zoom-out-down" data-aos-duration="2500"
+     >
      
       {/* CARD 1 */}
       <main className={styles.card}>

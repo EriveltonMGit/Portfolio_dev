@@ -1,8 +1,5 @@
-// IMPORTS COMPONENTS
-import WrapperTecnologias from "../../components/WrapperTecnologias";
-import CardTcnologia from "../../components/CardsTecnnologias";
-// IMPORT IMG 
-import ImgBoll from "../../assets/image/img_perfil_sobre/texto_boll.png"
+// IMPORT IMG
+import ImgBoll from "../../assets/image/img_perfil_sobre/texto_boll.png";
 // IMPORTS CSS
 import style from "../Tecnologias/tec.module.css";
 // IMPORT ICONS REACT
@@ -24,7 +21,8 @@ import { SiCanva } from "react-icons/si";
 
 function Tecnologias() {
   return (
-    <WrapperTecnologias
+    <section
+      className={style.section}
       id="tecnologias"
       // data-aos="fade-up"
       // data-aos-duration="3000"
@@ -35,90 +33,100 @@ function Tecnologias() {
       {/* DIV CONTAINER DOS CARDS */}
       <div className={style.container}>
         {/* CARD 1 */}
-        <div className={style.card_1} data-aos="fade-right" data-aos-duration="3000">
+        <div
+          className={style.card_1}
+          // data-aos="fade-right"
+          // data-aos-duration="3000"
+        >
           {/* AQUI FICA OS CARDS DAS TECNOLOGIAS */}
-          <CardTcnologia>
-            <p className={style.p}>
-              REACT <FaReact className={style.i} />
-            </p>
-          </CardTcnologia>
+          <div className={style.content}>
+            <div className={style.cards}>
+              <p className={style.p}>
+                REACT <FaReact className={style.i} />
+              </p>
+            </div>
 
-          <CardTcnologia>
-            <p className={style.p}>
-              ANGULAR <FaAngular className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              HTML <FaHtml5 className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              CSS <DiCss3 className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              SASS
-              <IoLogoSass className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              JAVASCRIPT <IoLogoJavascript className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              STYLED COMPONENTS <SiStyledcomponents className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              TAILWINDCSS
-              <RiTailwindCssLine className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              GITHUB
-              <FaGithub className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              FIGMA <BiLogoFigma className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              GOOGLE CLOUD <SiGooglecloud className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              TYPESCRIPT <TbBrandTypescript className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              BOOTSTRAP <FaBootstrap className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              POSTGRE SQL <SiPostgresql className={style.i} />
-            </p>
-          </CardTcnologia>
-          <CardTcnologia>
-            <p className={style.p}>
-              CANVA <SiCanva className={style.i} />
-            </p>
-          </CardTcnologia>
+            <div className={style.cards}>
+              <p className={style.p}>
+                ANGULAR <FaAngular className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                HTML <FaHtml5 className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                CSS <DiCss3 className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                SASS
+                <IoLogoSass className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                JAVASCRIPT <IoLogoJavascript className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                STYLED COMPONENTS <SiStyledcomponents className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                TAILWINDCSS
+                <RiTailwindCssLine className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                GITHUB
+                <FaGithub className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                FIGMA <BiLogoFigma className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                GOOGLE CLOUD <SiGooglecloud className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                TYPESCRIPT <TbBrandTypescript className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                BOOTSTRAP <FaBootstrap className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                POSTGRE SQL <SiPostgresql className={style.i} />
+              </p>
+            </div>
+            <div className={style.cards}>
+              <p className={style.p}>
+                CANVA <SiCanva className={style.i} />
+              </p>
+            </div>
+          </div>
         </div>
         {/* CARD 2 */}
-        <div className={style.card_2} data-aos="fade-left" data-aos-duration="3000">
+        <div
+          className={style.card_2}
+          data-aos="fade-left"
+          data-aos-duration="3000"
+        >
           <h3>Sobre minhas Habilidades</h3>
           <p>
             Neste painel, apresento as principais tecnologias e ferramentas que
@@ -132,15 +140,16 @@ function Tecnologias() {
             para o desenvolvimento web, complementadas pelo uso de Sass e Styled
             Components, proporcionando uma estilização avançada e
             componentizada. <br />
-            Estou sempre em busca de novas ferramentas e tendências para aprimorar meu trabalho, com um foco contínuo em React e Angular, que me permitem desenvolver interfaces de usuário reativas e robustas.
+            Estou sempre em busca de novas ferramentas e tendências para
+            aprimorar meu trabalho, com um foco contínuo em React e Angular, que
+            me permitem desenvolver interfaces de usuário reativas e robustas.
           </p>
         </div>
       </div>
-      <div className={style.ImgBoll} >
-      <img src={ImgBoll}  alt="imagem com nome do desenvolvedor" />  
+      <div className={style.ImgBoll}>
+        <img src={ImgBoll} alt="imagem com nome do desenvolvedor" />
       </div>
-      
-    </WrapperTecnologias>
+    </section>
   );
 }
 

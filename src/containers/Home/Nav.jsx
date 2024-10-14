@@ -73,8 +73,8 @@ function Nav() {
           </a>
         </li>
         <li>
-          <a href="#curriculo" onClick={handleSmoothScroll}>
-            <i className="bi bi-file-earmark-person-fill"></i>Currículo
+          <a href="#servicos" onClick={handleSmoothScroll}>
+            <i className="bi bi-file-earmark-person-fill"></i>Serviços
           </a>
         </li>
         <li>

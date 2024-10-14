@@ -1,0 +1,212 @@
+/* AQUI FICA O CSS DO SERVICES */
+
+.main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
+    margin-top: 10vh;
+    position: relative;
+}
+/* H1 */
+.h1{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 10%;
+    font-size: 3vw;
+    font-family:Proelium;
+    color: var(--white);
+}
+
+/* .cards */
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 55vh;
+    border-radius: 4px;
+    border: 1px solid var(--gray);
+    background-image: linear-gradient(
+      10deg,
+      black 0%,
+      #000000dd 70%,
+      #00000032 100%
+    );
+    text-align: center;
+    padding: 1rem;
+    z-index: 2;
+    transition: border 0.4s ease, border-image 0.4s ease; 
+       /* Para permitir que o elemento seja transformado em 3D */
+       transform-style: preserve-3d;
+       transition: transform 0.6s ease; /* Suavidade na animação */
+       perspective: 1000px; /* Define a profundidade 3D */
+}
+
+.cards:hover {
+    border: 1px solid transparent; 
+    border-image: linear-gradient(45deg, #9600ff, #11b6b6) 1;
+   
+}
+
+
+
+
+/* img div*/
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25%; 
+}
+.img img{
+width: 4vw;
+}
+/* .h2 */
+.h2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25%;
+    color: var(--white);
+    font-family:Purista;
+    font-size: 1.2vw;
+}
+/* .p */
+.p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    font-family:SpaceGrotesk-VariableFont;
+    font-size: 1.1vw;
+    color: var( --secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMAÇÃO UX TEXTOS */
+/* From Uiverse.io by Darlley */ 
+
+.section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cursor,
+.box,
+.text {
+  cursor: pointer;
+  
+}
+.cursor {
+  overflow: visible;
+  transform: translate3d(300px, 0, 0) scale(1);
+  transform-origin: center center;
+  transform-box: fill-box;
+  animation: cursor 5s ease infinite alternate;
+  
+}
+@keyframes cursor {
+  0% {
+    opacity: 0;
+    transform: translate3d(300px, 0, 0) scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(-200px, -200px, 0) scale(1);
+  }
+
+  /* clique */
+  65% {
+    opacity: 1;
+    transform: translate3d(-200px, -200px, 0) scale(0.95);
+  }
+  70% {
+    opacity: 1;
+    transform: translate3d(-200px, -200px, 0) scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(-300px, -50px, 0) scale(1);
+  }
+}
+
+.box {
+  opacity: 0;
+  animation: box 5s ease infinite alternate;
+}
+@keyframes box {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  65%,
+  100% {
+    opacity: 1;
+  }
+}
+.text {
+   
+}
+
+
+
+/* AQUI FICA A IMG DO CARD  IMG DEVICE */
+
+.device{
+  width: 45%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+
+}
+.device img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+ animation:  animation_device  infinite 10s linear;
+}
+
+@keyframes animation_device {
+  0%{
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(25px);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}

@@ -11,6 +11,9 @@ import Inicio from "./containers/Inicio/Inicio.jsx";
 import Sobre from "./containers/Sobre/Sobre.jsx";
 import Tecnologias from "./containers/Tecnologias/Tecnologias.jsx";
 import Projetos from "./containers/Projetos/Projetos.jsx";
+import Servicos from "./containers/Servicos/Servicos.jsx"
+import UX_Animation from './containers/Servicos/ux_animation.jsx'
+
 import Footer from "./containers/Footer/Footer.jsx"
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -19,6 +22,9 @@ createRoot(document.getElementById("root")).render(
     <Sobre />
     <Tecnologias />
     <Projetos />
+    <UX_Animation/>
+    <Servicos/>
+   
     <Footer />
   </StrictMode>
 );
