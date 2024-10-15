@@ -140,7 +140,7 @@ function Tecnologias() {
         <div
           className={style.card_2}
           data-aos="fade-left"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <h3>Sobre minhas Habilidades</h3>
           <p>

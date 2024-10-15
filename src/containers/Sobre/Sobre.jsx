@@ -54,7 +54,8 @@ function Sobre() {
 
       {/* AQUI FICA OS DOIS CARDS DA SECTION SOBRE */}
 
-      <div className={style.cards} data-aos="fade-right" data-aos-duration="3000">
+      <div className={style.cards}  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
         <h1 className={style.titulo}>
           Olá, eu sou Erivelton Magalhães{" "}
           <i className="bi bi-person-badge-fill"></i>

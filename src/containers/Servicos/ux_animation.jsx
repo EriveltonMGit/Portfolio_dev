@@ -1,7 +1,10 @@
 import style from "./serv.module.css";
 
 // IMPORT IMG DEVICE 
-// import DeviceImg from '../../assets/image/device_img.webp'
+import Img1 from '../../assets/icons/icons_servicos/icons_device/facetime.png'
+import Img2 from '../../assets/icons/icons_servicos/icons_device/app-store.png'
+import Img3 from '../../assets/icons/icons_servicos/icons_device/settings.png'
+import Img4 from '../../assets/icons/icons_servicos/icons_device/camera.png'
 
 function UX_Animation() {
   return (
@@ -160,8 +163,38 @@ function UX_Animation() {
                     </div>
                   
                 </div>
+                <div className={style.notfic}>
+                  <div>
+                   <i className="bi bi-app-indicator"></i>
+                
+                <p>Seja bem-vindo</p>  
+                  </div>
+               
+                <div>
+                <i className="bi bi-reception-4"></i>
+                <i className="bi bi-wifi"></i>
+                <i className="bi bi-battery-full"></i>  
+                </div>
+                
+                  
+                </div>
+                {/* AQUI FICA OS MINIS CARDS  */}
+                <div className={style.midia}>
+
+                  
+                </div>
+                <div className={style.midia_2}>
+
+                  
+                </div>
             </div>
-            <div className={style.home_button}></div>
+            {/* AQUI FICA OS ICONS DO RODAPÉ */}
+            <div className={style.home_button}>
+              <img src={Img1} alt="" />
+              <img src={Img2} alt="" />
+              <img src={Img3} alt="" />
+              <img src={Img4} alt="" />
+            </div>
         </div>
 
 
