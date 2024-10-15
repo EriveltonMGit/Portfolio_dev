@@ -600,8 +600,8 @@ rotate: 2deg;
   }
   
   .app_icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     backdrop-filter: blur(10px);
     border: 1px solid var(--gray);
     border-radius: 12px;
@@ -675,7 +675,7 @@ rotate: 2deg;
   /* .midia */
   .midia {
     border: 1px solid var(--gray);
-    height: 13vh;
+    height: 12vh;
     border-radius: 4px;
     width: 90%;
     position: absolute;
