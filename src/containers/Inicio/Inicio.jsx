@@ -28,7 +28,7 @@ function Inicio() {
         <div className={style.titulo}>
           <div className={styles.p}>
             
-            <p> SEJA BEM-VINDO <img src={ImgRotate} alt="" /> </p>
+            <p> REACT DEVELOPMENT <img src={ImgRotate} alt="" /> </p>
           </div>
 
 
