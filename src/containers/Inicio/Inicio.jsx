@@ -92,16 +92,16 @@ function Inicio() {
       <div className={styles.icons_social} data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
      
-          <a href="">
+          <a href="https://api.whatsapp.com/send?phone=5561981579569&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho!">
             <i className="bi bi-whatsapp"></i>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/erivelton-magalh%C3%A3es-553a6b215/">
             <i className="bi bi-linkedin"></i>
           </a>
-          <a href="">
+          <a href="https://github.com/EriveltonMGit/EriveltonMGit">
             <i className="bi bi-github"></i>
           </a>
-          <a href="">
+          <a href="https://web-desing-page.netlify.app/">
             <i className="bi bi-code-square"></i>
           </a>
         
