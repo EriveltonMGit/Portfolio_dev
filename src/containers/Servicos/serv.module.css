@@ -516,12 +516,14 @@ box-shadow: 10px 10px 1rem black;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  margin-top: 10vh;
+  text-align: center;
+ 
+ 
 }
 
 .speaker {
   width: 60px;
-  height: 4px;
+  height: 5px;
   background-color: rgb(0, 0, 0);
   border-radius: 4px;
   position: absolute;
@@ -544,10 +546,10 @@ box-shadow: 10px 10px 1rem black;
 
 .app_icon {
   
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
  backdrop-filter: blur(10px);
- border: 1px solid var(--gray);
+ border: 1px solid black;
   border-radius: 12px;
   color: rgb(0, 0, 0);
   margin: 10px;
