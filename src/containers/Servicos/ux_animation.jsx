@@ -184,6 +184,21 @@ function UX_Animation() {
                   
                 </div>
                 <div className={style.midia_2}>
+                 {/* DIV TEXTO ANIMADO  */}
+            <div className={style.div_texto_animado}>
+                <span  className={style.msg_texto}> Confira meus projetos <i className="bi bi-caret-left-fill"></i>
+                    Portfólio de
+                    Desenvolvimento Web - Criação, Inovação,
+                    Impacto! -
+                    Desenvolvendo soluções digitais <i className="bi bi-caret-left-fill"></i> Transformando ideias em
+                    realidade! -
+                    Especialista em UI/UX <i className="bi bi-caret-left-fill"></i> Design moderno e funcional para o seu
+                    negócio! -
+                    Projetos personalizados <i className="bi bi-braces"></i> Desenvolvimento web com foco em resultados! -
+                    Tecnologia a serviço da inovação 👋 Veja como posso ajudar no seu próximo projeto!
+                </span>
+
+            </div>
 
                   
                 </div>
