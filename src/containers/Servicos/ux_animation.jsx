@@ -3,13 +3,14 @@ import style from "./serv.module.css";
 import DeviceImg from '../../assets/image/device_img.png'
 function UX_Animation() {
   return (
-    <section className={style.section}>
+    <section className={style.section} data-aos="fade-left" data-a0s-duration="3000">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 614 390"
         height="390"
         width="614"
+        
       >
         <g id="Frame">
           <g id="box-figma">
@@ -125,7 +126,7 @@ function UX_Animation() {
       </svg>
 
       {/* AQUI FICA O SEGUNDO CARD */}
-     <main className={style.device}>
+     <main className={style.device} >
       <img src={DeviceImg} alt="" />
 
       </main>
