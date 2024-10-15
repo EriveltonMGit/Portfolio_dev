@@ -1,6 +1,8 @@
 
 // IMPORT CSS
 import Style from "./footer.module.css";
+// IMPORT IMG 
+import QrCode from "../../assets/image/qrcode_mentoria.jpg"
 
 function Footer() {
   return (
@@ -70,7 +72,10 @@ function Footer() {
           <div className={Style.footerColumn} data-aos="fade-left" data-aos-duration="3000">
             <h5 className={Style.footerTitle}>Siga-me</h5>
             <div className={Style.socialLinks}>
-              <a
+              <img src={QrCode} alt="" />
+              {/*  */}
+              <div className={Style.div_icons}>
+                 <a
                 href="https://wa.me/5561981579569"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -90,6 +95,8 @@ function Footer() {
               >
                 <i className="bi bi-instagram"></i>
               </a>
+              </div>
+             
             </div>
           </div>
         </div>

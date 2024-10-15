@@ -120,7 +120,7 @@
 }
 
 .p:hover .i {
-  color: var(--danger);
+  color:#0000ff;
 }
 
 /* AQUI FICA O CARD 2  */
@@ -315,7 +315,7 @@
 }
 
 .p:hover .i {
-  color: var(--danger);
+  color:#0000ff;
 }
 
 /* AQUI FICA O CARD 2  */
@@ -359,7 +359,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-bottom: -40vh;
+  margin-bottom: -0vh;
   margin-right: -23vw;
   width: 80vw;
   height: 50vh;

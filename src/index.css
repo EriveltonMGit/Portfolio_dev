@@ -47,7 +47,8 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(45deg, #dc3545 0,#17181f 50%, #17181f, #17181f, #17181f, #17181f13);
+  background-image: linear-gradient(45deg, #0000ffab 0,    #0000ff13
+  50%, #17181f, #17181f, #17181f, #17181f13);
   border-radius: 6px;
   transition: 05s ease-in-out;
 

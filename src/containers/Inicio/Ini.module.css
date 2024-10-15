@@ -110,8 +110,8 @@
   font-family: Proelium;
   background: linear-gradient(
     to left,
-    rgba(0, 0, 255, 1),
-    rgba(150, 0, 255, 1)
+    #0000ff,
+    #9600ff
   );
   -webkit-background-clip: text; /* Para Safari */
   -webkit-text-fill-color: transparent; /* Para Safari */
@@ -178,7 +178,6 @@
   font-family: SpaceGrotesk-VariableFont;
   font-size: 1vw;
   background-color: inherit;
-  transition: 1s;
   background: linear-gradient(
     to left,
     rgba(0, 0, 255, 1),
@@ -188,14 +187,19 @@
   white-space: normal;
   color: white;
   z-index: 5;
-  transition: 0.5s;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+  inset -5px -5px 10px #222;
+cursor: pointer;
+border: none;
+color: rgb(255, 255, 255);
+transition: 0.7s;
  
 }
 
 .btn_cv:hover {
   color: var(--light);
   box-shadow: 1px 1px 1rem var(--teal);
-  box-shadow: 0px 8px 40px rgba(50, 0, 255, 0.5);
+  box-shadow: 0px 8px 20px #3200ff80;
 }
 
 .btn_cv i {
@@ -228,6 +232,7 @@
   align-items: center;
   justify-content: space-around;
   transition: 0.5s;
+  
 }
 
 /* AQUI FICA A ANIMÇÃO DOS MINI CARDS DA SECTION 1 card 1 */
@@ -288,6 +293,7 @@
   text-align: center;
   padding: 1rem;
   transition: 0.5s;
+  
 }
 
 .mini_cards:hover {

@@ -86,9 +86,14 @@
 /* Links sociais */
 .socialLinks {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1vh;
 }
-
+.socialLinks img{
+  width: 7vw;
+}
 .socialLinks a {
   color: white;
   font-size: 2vw;
@@ -232,14 +237,23 @@
 }
 /* Links sociais */
 .socialLinks {
-  display: flex;
-  gap: 10px;
+width: 100%;
+  
 }
-
+.socialLinks .div_icons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socialLinks img{
+  display: none;
+}
 .socialLinks a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
   gap: 2vw;
   color: white;
   font-size: 7vw;

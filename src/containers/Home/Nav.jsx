@@ -74,7 +74,7 @@ function Nav() {
         </li>
         <li>
           <a href="#servicos" onClick={handleSmoothScroll}>
-            <i className="bi bi-file-earmark-person-fill"></i>Serviços
+            <i className="bi bi-ui-radios-grid"></i>Serviços
           </a>
         </li>
         <li>

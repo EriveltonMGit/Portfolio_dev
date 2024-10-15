@@ -1,10 +1,11 @@
 import style from "./serv.module.css";
 // IMPORT IMG DEVICE 
-import DeviceImg from '../../assets/image/device_img.png'
+import DeviceImg from '../../assets/image/device_img.webp'
 function UX_Animation() {
   return (
-    <section className={style.section} data-aos="fade-left" data-a0s-duration="3000">
-      <svg
+    <section className={style.section} data-aos="fade-up" data-aos-duration="2000">
+     <div className={style.animation_div}>
+     <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 614 390"
@@ -124,6 +125,7 @@ function UX_Animation() {
           </g>
         </g>
       </svg>
+     </div>
 
       {/* AQUI FICA O SEGUNDO CARD */}
      <main className={style.device} >
