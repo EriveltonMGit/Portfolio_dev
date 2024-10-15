@@ -5,6 +5,12 @@ import Img1 from '../../assets/icons/icons_servicos/icons_device/facetime.png'
 import Img2 from '../../assets/icons/icons_servicos/icons_device/app-store.png'
 import Img3 from '../../assets/icons/icons_servicos/icons_device/settings.png'
 import Img4 from '../../assets/icons/icons_servicos/icons_device/camera.png'
+// IMG CARDS 2
+
+// import Img_MidiaPlayer from '../../assets/icons/icons_servicos/icons_device/midia_player.jpg'
+// import Img6 from '../../assets/icons/icons_servicos/icons_device/app-store.png'
+// import Img7 from '../../assets/icons/icons_servicos/icons_device/settings.png'
+// import Img8 from '../../assets/icons/icons_servicos/icons_device/camera.png'
 
 function UX_Animation() {
   return (
@@ -181,6 +187,7 @@ function UX_Animation() {
                 {/* AQUI FICA OS MINIS CARDS  */}
                 <div className={style.midia}>
 
+           {/* <img src={Img_MidiaPlayer} alt="" /> */}
                   
                 </div>
                 <div className={style.midia_2}>
