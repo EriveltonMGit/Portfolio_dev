@@ -1,6 +1,6 @@
 import style from "./serv.module.css";
 // IMPORT IMG DEVICE 
-import DeviceImg from '../../assets/icons/icons_servicos/device_img.png'
+import DeviceImg from '../../assets/image/device_img.png'
 function UX_Animation() {
   return (
     <section className={style.section}>

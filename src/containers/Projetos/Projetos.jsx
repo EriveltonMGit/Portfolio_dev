@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-import WrapperProjetos from "../../components/WrapperProjetos";
 import Button from "../../components/Button.style";
 import Modal from "../../components/Modal.style";
 // IMPORT CSS
@@ -38,7 +36,7 @@ function Projetos() {
   };
 
   return (
-    <WrapperProjetos id="projetos">
+    <section id="projetos" className={style.section}>
       {/* AQUI FICA OS CARDS QUE SE FECHAM */}
       <div
         className={`${style.cad_animation_left} ${
@@ -89,7 +87,7 @@ function Projetos() {
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
-            <Button>Saiba mais</Button>
+            <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
 
@@ -113,7 +111,7 @@ function Projetos() {
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
-            <Button>Saiba mais</Button>
+            <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
         {/* Card 3 */}
@@ -136,7 +134,7 @@ function Projetos() {
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
-            <Button>Saiba mais</Button>
+            <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
       </div>
@@ -162,7 +160,7 @@ function Projetos() {
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
-            <Button>Saiba mais</Button>
+            <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
         {/* CARD 5 */}
@@ -186,7 +184,7 @@ function Projetos() {
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
-            <Button>Saiba mais</Button>
+            <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
         {/* CARD 6 */}
@@ -210,14 +208,14 @@ function Projetos() {
           </div>
           <div className={style.card_flu}>
             <p>Data do projeto 2024</p>
-            <Button>Saiba mais</Button>
+            <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
       </div>
 
       {/* MODAL FICA AQUI*/}
       {selectedCard && (
-  <Modal $isVisible={selectedCard !== null}>
+  <Modal $isVisible={selectedCard !== null} className={style.modal}>
     {selectedCard && (
       <>
         <img
@@ -252,7 +250,7 @@ function Projetos() {
 
 
       <img src={BkPerfil} className={style.BkPerfil} alt="" />
-    </WrapperProjetos>
+    </section>
   );
 }
 

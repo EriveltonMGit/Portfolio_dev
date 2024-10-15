@@ -1,11 +1,10 @@
-// IMPORTS COMPONENTS
-import WrapperPrincipal from "../../components/WrapperPrincipal";
+
 // IMPORT CSS
 import Style from "./footer.module.css";
 
 function Footer() {
   return (
-    <WrapperPrincipal id="contato">
+    <section id="contato" className={Style.section}>
       <footer id="contato" className={Style.footer}>
         <div className={Style.container} >
           {/* Sobre */}
@@ -99,7 +98,7 @@ function Footer() {
           © 2024 Copyright: Todos os direitos reservados.
         </div>
       </footer>
-    </WrapperPrincipal>
+    </section>
   );
 }
 

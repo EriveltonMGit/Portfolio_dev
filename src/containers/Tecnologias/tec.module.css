@@ -359,10 +359,10 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-bottom: -30vh;
+  margin-bottom: -40vh;
   margin-right: -23vw;
-  width: 50vw;
-  height: 40vh;
+  width: 80vw;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
