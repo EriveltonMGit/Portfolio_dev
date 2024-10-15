@@ -4,7 +4,7 @@ const Modal = styled.main`
   /* Estilos existentes */
   width: 60%;
   height: 70vh;
-  position: fixed;
+  position: absolute;
   top: 20vh;
   left: 20%;
   z-index: 10;

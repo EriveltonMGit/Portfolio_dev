@@ -1,9 +1,13 @@
 import style from "./serv.module.css";
+
 // IMPORT IMG DEVICE 
-import DeviceImg from '../../assets/image/device_img.webp'
+// import DeviceImg from '../../assets/image/device_img.webp'
+
 function UX_Animation() {
   return (
-    <section className={style.section} data-aos="fade-up" data-aos-duration="2000">
+    <section className={style.section}
+    //  data-aos="fade-up" data-aos-duration="2000"
+     >
      <div className={style.animation_div}>
      <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +133,37 @@ function UX_Animation() {
 
       {/* AQUI FICA O SEGUNDO CARD */}
      <main className={style.device} >
-      <img src={DeviceImg} alt="" />
+      {/* <img src={DeviceImg} alt="" /> */}
+      
+      <div className={style.cellphone}>
+            <div className={style.speaker}></div>
+            <div className={style.screen}>
+                <div className={style.app_grid}>
+                    <div className={style.app_icon}>
+                    <i className="bi bi-telephone"></i>
+                    
+                    </div>
+                    <div className={style.app_icon}>
+                    <i className="bi bi-envelope"></i>
+                    </div>
+                    <div className={style.app_icon}>
+                    <i className="bi bi-camera"></i>
+                    </div>
+                    <div className={style.app_icon}>
+                    <i className="bi bi-gear"></i>
+                    </div>
+                    <div className={style.app_icon}>
+                    <i className="bi bi-music-note"></i>
+                    </div>
+                    <div className={style.app_icon}>
+                    <i className="bi bi-chat"></i>
+                    </div>
+                  
+                </div>
+            </div>
+            <div className={style.home_button}></div>
+        </div>
+
 
       </main>
      

@@ -565,7 +565,7 @@ transition: 0.7s;
     position: absolute;
     top: 0;
     left: 25%;
-    margin-top: 40vh;
+    margin-top: 43vh;
     padding: 0.5rem;
     width: 50%;
     display: flex;
@@ -765,7 +765,7 @@ transition: 0.7s;
     left: 0;
     bottom: 0;
     z-index: 10;
-    margin-bottom: -70vh;
+    margin-bottom: 50vh;
   }
   .icons_social a {
     color: var(--secondary);

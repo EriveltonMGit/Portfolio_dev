@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     gap:2vw;
-    margin-top: 10vh;
+    margin-top: 20vh;
     position: relative;
 }
 /* H1 */
@@ -116,18 +116,14 @@ width: 4vw;
     align-items: center;
     justify-content: space-around;
 }
-.cursor,
-.box,
-.text {
-  cursor: pointer;
-  
-}
+
 .cursor {
   overflow: visible;
   transform: translate3d(300px, 0, 0) scale(1);
   transform-origin: center center;
   transform-box: fill-box;
   animation: cursor 5s ease infinite alternate;
+  
   
 }
 @keyframes cursor {
@@ -192,7 +188,7 @@ width: 4vw;
 
 }
 .device img{
-  width: 40vw;
+  width: 30vw;
   object-fit: cover;
   background-size: cover;
  animation:  animation_device  infinite 10s linear;
@@ -209,6 +205,86 @@ width: 4vw;
     transform: translateY(0%);
   }
 }
+
+
+/* SMART PHONE  */
+.cellphone {
+  width: 35%;
+  height: 90%;
+  border: 5px solid black;
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+  transition: 0.5s;
+  backdrop-filter: blur(8px);
+}
+.cellphone:hover{
+box-shadow: 10px 10px 1rem black;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+ 
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.speaker {
+  width: 60px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home_button {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.app_icon {
+  width: 60px;
+  height: 60px;
+ backdrop-filter: blur(10px);
+ border: 1px solid var(--gray);
+  border-radius: 12px;
+  color: white;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.3vw;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+.app_icon:hover{
+scale: 1.1;
+color: #11b6b6;
+box-shadow: 1px 1px 1rem black;
+}
+
+.app_grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
 
 
 
@@ -329,7 +405,7 @@ width: 15vw;
 
 .section{
   width: 90%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -416,22 +492,86 @@ align-items: center;
 justify-content: center;
 
 }
-.device img{
-width:80vw;
-object-fit: cover;
-background-size: cover;
-animation:  animation_device  infinite 10s linear;
+
+
+/* SMART PHONE  */
+.cellphone {
+  width: 60%;
+  height: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+  transition: 0.5s;
+ background-color: beige;
+}
+.cellphone:hover{
+box-shadow: 10px 10px 1rem black;
 }
 
-@keyframes animation_device {
-0%{
-  transform: translateY(0%);
+.screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10vh;
 }
-50%{
-  transform: translateY(25px);
+
+.speaker {
+  width: 60px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-100%{
-  transform: translateY(0%);
+
+.home_button {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
 }
+
+.app_icon {
+  
+  width: 60px;
+  height: 60px;
+ backdrop-filter: blur(10px);
+ border: 1px solid var(--gray);
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 5vw;
+  transition: 0.5s;
+  cursor: pointer;
+  
 }
+.app_icon:hover{
+scale: 1.1;
+color: #11b6b6;
+box-shadow: 1px 1px 1rem black;
+}
+
+.app_grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
 }

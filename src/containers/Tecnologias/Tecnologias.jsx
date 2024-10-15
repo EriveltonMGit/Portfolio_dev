@@ -40,81 +40,96 @@ function Tecnologias() {
         >
           {/* AQUI FICA OS CARDS DAS TECNOLOGIAS */}
           <div className={style.content}>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 REACT <FaReact className={style.i} />
               </p>
             </div>
 
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 ANGULAR <FaAngular className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 HTML <FaHtml5 className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 CSS <DiCss3 className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 SASS
                 <IoLogoSass className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 JAVASCRIPT <IoLogoJavascript className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 STYLED COMPONENTS <SiStyledcomponents className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 TAILWINDCSS
                 <RiTailwindCssLine className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 GITHUB
                 <FaGithub className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 FIGMA <BiLogoFigma className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 GOOGLE CLOUD <SiGooglecloud className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 TYPESCRIPT <TbBrandTypescript className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 BOOTSTRAP <FaBootstrap className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 POSTGRE SQL <SiPostgresql className={style.i} />
               </p>
             </div>
-            <div className={style.cards}>
+            <div className={style.cards} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
               <p className={style.p}>
                 CANVA <SiCanva className={style.i} />
               </p>

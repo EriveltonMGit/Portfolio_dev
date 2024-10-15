@@ -18,11 +18,15 @@ function Sobre() {
           <i className="bi bi-code-square" title="Código"></i>
           <i className="bi bi-braces-asterisk" title="Braces Asterisk"></i>
           <i className="bi bi-filetype-js" title="Node.js"></i>
+          <i className="bi bi-chat-dots" title="Comunicação"></i>
+          <i className="bi bi-stack" title="Tecnologia Full Stack"></i>
+          <i className="bi bi-laptop" title="Desenvolvimento Web"></i>
           <i className="bi bi-filetype-ts" title="TypeScript"></i>
           <i className="bi bi-activity" title="Responsividade"></i>
           <i className="bi bi-filetype-scss" title="SCSS"></i>
           <i className="bi bi-filetype-sass" title="SASS"></i>
           <i className="bi bi-filetype-html" title="HTML"></i>
+          <i className="bi bi-hdd" title="Banco de Dados"></i>
           <i className="bi bi-filetype-tsx" title="TypeScript JSX"></i>
           <i className="bi bi-bootstrap" title="Bootstrap"></i>
           <i className="bi bi-github" title="GitHub"></i>
@@ -30,6 +34,12 @@ function Sobre() {
           <i className="bi bi-stack" title="Tecnologia Full Stack"></i>
           <i className="bi bi-laptop" title="Desenvolvimento Web"></i>
           <i className="bi bi-cloud" title="Cloud Computing"></i>
+          <i className="bi bi-hdd" title="Banco de Dados"></i>
+          <i className="bi bi-server" title="Servidores"></i>
+          <i className="bi bi-terminal" title="Terminal"></i>
+          <i className="bi bi-chat-dots" title="Comunicação"></i>
+          <i className="bi bi-gear" title="Configurações"></i>
+          <i className="bi bi-lock-fill" title="Segurança"></i>
           <i className="bi bi-hdd" title="Banco de Dados"></i>
           <i className="bi bi-server" title="Servidores"></i>
           <i className="bi bi-terminal" title="Terminal"></i>
@@ -51,15 +61,7 @@ function Sobre() {
         </h1>
 
         <p className={style.p_dev}>
-          Formado em Análise e Desenvolvimento de Sistemas, desenvolvedor
-          Front-end e Web Designer, com formação em Google Cloud Computing e
-          atualmente cursando desenvolvedor Full Stack e Ciência da Computação.
-          Minha paixão por tecnologias e design me permite criar soluções
-          completas e atraentes, que aliam performance, usabilidade e inovação.
-          Tenho experiência com ferramentas de desenvolvimento como Angular e
-          React. Estou sempre buscando novas ferramentas e tendências para
-          melhorar meus projetos, tornando a experiência do usuário agradável e
-          atrativa.
+        Formado em Análise e Desenvolvimento de Sistemas, sou desenvolvedor Front-end e Web Designer com especialização em Google Cloud Computing. Atualmente, estou expandindo meus conhecimentos cursando Desenvolvimento Full Stack e Ciência da Computação. Minha paixão por tecnologia e design me capacita a criar soluções eficientes, inovadoras e visualmente atraentes, com foco em performance e usabilidade. Tenho experiência prática com ferramentas como Angular e React, e estou sempre explorando novas tecnologias e tendências para otimizar meus projetos, proporcionando uma experiência de usuário envolvente e intuitiva.
         </p>
       </div>
       {/* AQUI FICA A  IMAGEM DO CARD 2 PERFIl */}

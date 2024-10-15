@@ -306,7 +306,7 @@
   transition: 0.5s;
 }
 .p:hover {
-  color: var(--light);
+  color: #0000ff;
 }
 
 .p .i {
@@ -359,7 +359,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-bottom: -0vh;
+  margin-bottom: -40vh;
   margin-right: -23vw;
   width: 80vw;
   height: 50vh;

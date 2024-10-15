@@ -13,9 +13,9 @@
 }
 
 /* modal */
-.modal{
+/* .modal{
 
-}
+} */
 
 
 
@@ -51,34 +51,33 @@
 .cad_animation_left {
   position: absolute;
   left: 0;
-  border-right: 1px solid var(--gray);
+ 
   width: 50%;
   height: 100%;
-  background-color: var(--dark);
-  transition: width 1s ease; /* Adiciona transição à largura */
+  backdrop-filter: blur(5px);
+  transition: width 1s ease;
   z-index: 5;
   box-shadow: 1px 1px 1rem black;
 }
 
 .cad_animation_left.show {
-  width: 0px; /* Ajuste para que a div se feche */
+  width: 0px; 
 }
 
 /* AQUI FICA A ANIMAÇÃO DOS CARS LEFT E RIGTH */
 .cad_animation_rigth {
   position: absolute;
   right: 0;
-  border-left: 1px solid var(--gray);
   width: 50%;
   height: 100%;
-  background-color: var(--dark);
-  transition: width 1s ease; /* Adiciona transição à largura */
+ backdrop-filter: blur(5px);
+  transition: width 1s ease;
   z-index: 5;
   box-shadow: 1px 1px 1rem black;
 }
 
 .cad_animation_rigth.show {
-  width: 0px; /* Ajuste para que a div se feche */
+  width: 0px; 
 }
 
 /* AQUI FICA O BUTAO PARA FECHAR OS CARDS*/
@@ -112,7 +111,7 @@
   width: 4vw;
   height: 20vh;
   right: 0;
-  z-index: 1;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,35 +330,33 @@
 .cad_animation_left {
   position: absolute;
   left: 0;
-  border-right: 1px solid var(--gray);
   width: 50%;
   height: 100%;
-  background-color: var(--dark);
-  transition: width 1s ease; /* Adiciona transição à largura */
+  backdrop-filter: blur(5px);
+  transition: width 1s ease; 
   z-index: 5;
   box-shadow: 1px 1px 1rem black;
 
 }
 
 .cad_animation_left.show {
-  width: 0px; /* Ajuste para que a div se feche */
+  width: 0px; 
 }
 
 /* AQUI FICA A ANIMAÇÃO DOS CARS LEFT E RIGTH */
 .cad_animation_rigth {
   position: absolute;
   right: 0;
-  border-left: 1px solid var(--gray);
   width: 50%;
   height: 100%;
-  background-color: var(--dark);
-  transition: width 1s ease; /* Adiciona transição à largura */
+ backdrop-filter: blur(5px);
+  transition: width 1s ease; 
   z-index: 5;
   box-shadow: 1px 1px 1rem black;
 }
 
 .cad_animation_rigth.show {
-  width: 0px; /* Ajuste para que a div se feche */
+  width: 0px; 
 }
 
 /* AQUI FICA O BUTAO PARA FECHAR OS CARDS*/
@@ -391,18 +388,18 @@
 .btn_abrir {
   position: absolute;
   padding: 1rem;
-  width: 15vw;
+  width:20vw;
   height: 20vh;
   right: 0;
   margin-top: 10vh;
-  z-index: 1;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: inherit;
   color: white;
   border: none;
-  font-size: 30vw;
+  font-size: 25vw;
   animation: animation_arrow infinite 1s linear;
  
 }

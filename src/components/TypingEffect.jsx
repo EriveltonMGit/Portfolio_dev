@@ -32,7 +32,7 @@ const TypingEffect = () => {
         setCharIndex(0);
         setDisplayedText("");
         setPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
-      }, 1300); // Tempo antes de começar a próxima frase
+      }, 1600); // Tempo antes de começar a próxima frase
 
       return () => clearTimeout(timeout);
     }

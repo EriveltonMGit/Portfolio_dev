@@ -1,17 +1,8 @@
 // import React, { useState } from "react";
 // IMPORT MODULES
-// import WrapperPrincipal from "../../components/WrapperPrincipal";
-// import Card from "../../components/Card.style";
-// import Titulo from "../../components/Titulo.style";
-// import AreaCard from "../../components/AreaCard1.style";
-// import MiniCard from "../../components/MiniCards.style";
-// import ButtonLeft from "../../components/ButtonLeft.style";
 import TypingEffect from "../../components/TypingEffect";
 // ANIMAÇÃO 
-
-
 // IMPORT CSS
-// import style from "../inicio/Ini.module.css";
 import styles from '../Inicio/Ini.module.css'; 
 
 // IMPORT ICONS REACT 
@@ -26,7 +17,7 @@ import FrameImg from "../../assets/frame/boll_animation.gif"
 function Inicio() {
   return (
     <section className={styles.inicio} id="inicio"
-    //  data-aos="zoom-out-down" data-aos-duration="2500"
+     data-aos="zoom-out-down" data-aos-duration="1000"
      >
      
       {/* CARD 1 */}
@@ -98,7 +89,8 @@ function Inicio() {
 
 
       {/* AQUI FICA OS ICONS DO CARD PRINCIPAL 1 */}
-      <div className={styles.icons_social}>
+      <div className={styles.icons_social} data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
      
           <a href="">
             <i className="bi bi-whatsapp"></i>
