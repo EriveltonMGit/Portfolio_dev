@@ -88,6 +88,7 @@ const Modal = styled.main`
     padding: 10px;
     display: flex;
     flex-direction: column;
+    position:fixed;
 
     .modal-img {
       width: 30vw; 
