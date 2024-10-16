@@ -13,11 +13,13 @@ const MediaPlayer = () => {
         audioRef.current.pause();
         setIsPlaying(false);
       } else {
-        audioRef.current.play().then(() => {
-          setIsPlaying(true);
-        }).catch((error) => {
-          console.error("Erro ao tentar tocar o áudio:", error);
-        });
+        audioRef.current.play()
+          .then(() => {
+            setIsPlaying(true);
+          })
+          .catch((error) => {
+            console.error("Erro ao tentar tocar o áudio:", error);
+          });
       }
     }
   };
