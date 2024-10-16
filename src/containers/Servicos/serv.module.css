@@ -856,14 +856,13 @@
 
 
 
-
-/* MIDIA SCREN 480PX */
-@media (max-width: 480px) {
+/* AQUI FICA O MIDIA SCREEN 480PX */
+@media screen and (max-width: 480px){
   /* AQUI FICA O CSS DO SERVICES */
 
   .main {
     width: 100%;
-    height: 200vh;
+    height: 300vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -956,7 +955,7 @@
 
   .section {
     width: 90%;
-    height: 110vh;
+    height: 135vh;
     display: flex;
     align-items: center;
     justify-content: center;

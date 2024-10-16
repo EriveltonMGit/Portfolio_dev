@@ -270,7 +270,7 @@
 
 
 /* AQUI FICA O MIDIA SCREEN 320PX */
-@media (max-width: 320px){
+@media screen and (max-width: 320px){
   /* AQUI FICA O CSS DO PROJETOS */
 .section{
   width: 100%;
@@ -286,11 +286,7 @@
  
 }
 
-/* modal */
-/* .modal{
 
-  
-} */
 
 
 
@@ -558,11 +554,11 @@
 }
 }
 /* AQUI FICA O MIDIA SCREEN 480PX */
-@media (max-width: 480px){
+@media screen and (max-width: 480px){
 /* AQUI FICA O CSS DO PROJETOS */
 .section{
   width: 100%;
-  height: 200vh;
+  height: 220vh;
   margin-top:30vh;
   display: flex;
   align-items: center;
