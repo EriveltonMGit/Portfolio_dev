@@ -86,7 +86,7 @@ function Projetos() {
             <img src={ImgCrd1} alt="" />
           </div>
           <div className={style.card_flu}>
-            <p>Data do projeto 2024</p>
+            <p>Data  29 de junho de 2024</p>
             <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
@@ -110,7 +110,7 @@ function Projetos() {
             <img src={ImgCrd2} alt="" />
           </div>
           <div className={style.card_flu}>
-            <p>Data do projeto 2024</p>
+            <p>Data 3 de Setembro de 2024</p>
             <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
@@ -133,7 +133,7 @@ function Projetos() {
             <img src={ImgCrd3} alt="" />
           </div>
           <div className={style.card_flu}>
-            <p>Data do projeto 2024</p>
+            <p>Data 7 de Setembro de 2024</p>
             <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
@@ -159,7 +159,7 @@ function Projetos() {
             <img src={ImgCrd4} alt="" />
           </div>
           <div className={style.card_flu}>
-            <p>Data do projeto 2024</p>
+            <p>Data 18 de Junho de 2024</p>
             <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
@@ -183,7 +183,7 @@ function Projetos() {
             <img src={ImgCrd5} alt="" />
           </div>
           <div className={style.card_flu}>
-            <p>Data do projeto 2024</p>
+            <p>Data 6 de Junho de 2024</p>
             <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
@@ -207,7 +207,7 @@ function Projetos() {
             <img src={ImgCrd6} alt="" />
           </div>
           <div className={style.card_flu}>
-            <p>Data do projeto 2024</p>
+            <p>Data 29 de Agosto de 2024</p>
             <Button className={style.btn_device}>Saiba mais</Button>
           </div>
         </div>
