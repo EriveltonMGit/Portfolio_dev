@@ -8,7 +8,7 @@ Atualmente, dois plugins oficiais estão disponíveis:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-**Atenção!** site em construção.  
+**Atenção!** site em construção, mudanças esntão sendo implementadas. 
 ![Descrição da Imagem](https://github.com/EriveltonMGit/Portfolio_dev/raw/main/src/assets/image/capa.png)
 
 
@@ -19,14 +19,14 @@ Link para o projeto
 
 # Linguagens utilizadas   
  <div display="flex" >
-<img width="27" higth="27"   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-<img width="27" higth="27"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-<img width="27" higth="27" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />   
-<img width="30" higth="30"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" />
-<img width="30" higth="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" /> 
-<img width="30" higth="30"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-<img width="30" higth="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-<img  width="30" higth="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yaml/yaml-original.svg" />
+<img width="27" height="27" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+<img width="27" height="27" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+<img width="27" height="27" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+<img width="30" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+<img width="30" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+<img width="30" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+<img width="30" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yaml/yaml-original.svg" />
+<img width="30" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"  />
 
 
 </div>   
@@ -50,7 +50,7 @@ A página de contato oferece uma forma simples e direta de me enviar mensagens. 
 Neste projeto, dediquei um botão que direciona o usuário para minha página de desenvolvimento e serviços:
  <a href="https://web-desing-page.netlify.app/">Digital Dream</a> . Aqui, mostro uma visão completa do meu trabalho, destacando minhas habilidades em desenvolvimento front-end e design UX/UI, aplicadas na criação de experiências digitais eficientes e inovadoras. Através deste portfólio, você pode explorar meus principais projetos, entender as ferramentas e tecnologias que utilizo, e ver como abordo desafios para entregar soluções modernas e funcionais.
 
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EriveltonMGit&layout=compact)
+ 
 
 
 
