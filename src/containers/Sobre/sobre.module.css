@@ -408,16 +408,12 @@
 }
 
 
-
-
-
-
 /* AQUI FICA O MIDIA SCREEN 480PX */
 @media (max-width: 480px) {
   /* AQUI FICA O CSS DO SOBRE */
   .main {
     width: 100%;
-    height: 230vh;
+    height: 220vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -544,6 +540,7 @@
     position: absolute;
     bottom: 0;
     background-color: var(--card);
+    z-index: 5;
 
   }
   

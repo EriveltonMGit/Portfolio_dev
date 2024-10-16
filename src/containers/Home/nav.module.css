@@ -166,6 +166,7 @@
     color: var(--secondary);
     transition: 0.5s;
     font-size: 4vw;
+    z-index: 10;
   }
   .lua:hover {
     background-color: var(--info);

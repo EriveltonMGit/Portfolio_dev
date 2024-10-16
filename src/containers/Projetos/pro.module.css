@@ -573,13 +573,6 @@
  
 }
 
-/* modal */
-/* .modal{
-
-  
-} */
-
-
 
 .main {
   width: 100%;
@@ -651,7 +644,7 @@
   position: absolute;
   z-index: 10;
   padding: 1rem;
-  width: 30vw;
+  width: 20vw;
   height: 20vh;
   display: flex;
   align-items: center;
@@ -686,7 +679,7 @@
   background-color: inherit;
   color: white;
   border: none;
-  font-size: 25vw;
+  font-size: 10vw;
   animation: animation_arrow infinite 1s linear;
  
 }

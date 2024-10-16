@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import style from "./serv.module.css";
 // IMG GIF
 import Gif from '../../assets/frame/musica-music.gif'
+import AudioFile from '../../assets/frame/Infraction_-_Rich.mp3';
 
 const MediaPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -59,7 +60,7 @@ const MediaPlayer = () => {
           onTimeUpdate={handleTimeUpdate} 
           onLoadedMetadata={handleLoadedMetadata}
         >
-          <source src="/src/assets/frame/Infraction_-_Rich.mp3" type="audio/mp3" />
+        <source src={AudioFile} type="audio/mp3" />
           Seu navegador não suporta o elemento de áudio.
         </audio>
         <div className={style.progressContainer}>
