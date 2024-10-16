@@ -185,6 +185,205 @@
   }
 }
 
+
+/* AQUI FICA O MIDIA SCREEN 320PX */
+@media (max-width: 320px){
+ /* AQUI FICA O CSS DA SECTION TECNOLOGIAS */
+ .section {
+  width: 100%;
+  height: 300vh;
+  margin-top: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+/*CARD 1  */
+.container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+ /* content */
+ .content{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  margin-top: 15vh;
+
+}
+/* CARD TECNOLOGIA */
+.cards {
+  border: 1px solid var(--gray);
+  width: 30%;
+  height: 15vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  transition: 1s;
+  background-image: linear-gradient(
+    10deg,
+    black 0%,
+    #000000dd 20%,
+    #00000032 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+/* .cards::after */
+.cards::after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.5s ease;
+  z-index: -1;
+}
+/* .cards:hover::after */
+.cards:hover::after {
+  height: 100%;
+}
+
+/*  AQUI FICA O CSS DO H1 DA SECION TECNOLOGIAS */
+.h1 {
+  width: 90%;
+  height: 10%;
+  font-family: Proelium;
+  font-size: 8vw;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 3vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--light);
+  position: absolute;
+  top: 0;
+}
+
+
+/* AQUI FICA O CARD 1  */
+.card_1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* AQUI FICA O CSS DOS CARS */
+.p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  color: rgb(167, 158, 158);
+  font-family: Purista;
+  font-size: 3vw;
+  border: 1px solid white;
+  margin-bottom: 0;
+  text-align: center;
+  transition: 0.5s;
+}
+.p:hover {
+  color: #0000ff;
+}
+
+.p .i {
+  font-size: 8vw;
+  transition: 0.5s;
+}
+
+.p:hover .i {
+  color:#0000ff;
+}
+
+/* AQUI FICA O CARD 2  */
+.card_2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+}
+
+/* .card_2 h3 */
+.card_2 h3 {
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 10%;
+  font-family: Proelium;
+  font-size: 7vw;
+}
+
+/* .card_2 p */
+.card_2 p {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-family: SpaceGrotesk-VariableFont;
+  font-size: 5.5vw;
+  padding: 1rem;
+}
+
+/* TEXTO ANIMADO BOLL */
+.ImgBoll {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -40vh;
+  margin-right: -23vw;
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.ImgBoll img {
+  width: 100vw;
+  animation: rotate_boll infinite 20s linear;
+}
+
+@keyframes rotate_boll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+}
+
 /* AQUI FICA O MIDIA SCREEN 480PX */
 @media (max-width: 480px) {
   /* AQUI FICA O CSS DA SECTION TECNOLOGIAS */
