@@ -749,11 +749,11 @@
   /* .midia */
   .midia {
     border: 1px solid var(--gray);
-    height: 18vh;
+    height: 15vh;
     border-radius: 4px;
     width: 90%;
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 23vh;
     backdrop-filter: blur(5px);
   }
   .mediaPlayer {
