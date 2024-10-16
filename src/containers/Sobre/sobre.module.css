@@ -334,7 +334,7 @@
     display: flex;
     align-items: center;
     gap: 20vw; 
-    animation: animation_icons 60s linear infinite; 
+    animation: animation_icons 80s linear infinite; 
   }
   
   .card_1 div i {
