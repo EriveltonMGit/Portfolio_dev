@@ -126,6 +126,103 @@ const Modal = styled.main`
       }
     }
   }
+
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+  width: 90%;
+    left: 5%;
+    height: 90vh;
+    margin-top: -10vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+
+    .modal-img {
+      width: 30vw; 
+    }
+
+    .modal-content {
+      gap: 5px; 
+      
+
+      h2 {
+        font-size: 4.5vw; 
+      }
+
+      p {
+        font-size: 4vw; 
+      }
+
+      b {
+        font-size: 4vw; 
+        width: 100%; 
+        height: auto; 
+      }
+
+      button {
+        background-color: var(--danger);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20vw;
+        border-radius: 4px;
+        font-family: gotham-black;
+        font-size: 4vw;
+        transition: 0.5s;
+        margin-top: -20vh;
+      }
+    }
+}
+
+
+  /* Media query para telas menores */
+  @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){
+    width: 90%;
+    left: 5%;
+    height: 90vh;
+    margin-top: -10vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+
+    .modal-img {
+      width: 30vw; 
+    }
+
+    .modal-content {
+      gap: 5px; 
+      
+
+      h2 {
+        font-size: 4.5vw; 
+      }
+
+      p {
+        font-size: 4vw; 
+      }
+
+      b {
+        font-size: 4vw; 
+        width: 100%; 
+        height: auto; 
+      }
+
+      button {
+        background-color: var(--danger);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20vw;
+        border-radius: 4px;
+        font-family: gotham-black;
+        font-size: 4vw;
+        transition: 0.5s;
+        margin-top: -20vh;
+      }
+    }
+  }
 `;
 
 export default Modal;

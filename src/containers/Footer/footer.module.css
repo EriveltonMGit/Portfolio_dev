@@ -282,3 +282,324 @@ width: 100%;
 
 
 }
+
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+   /* footer.module.css */
+.section{
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  z-index:1;
+}
+/* Estilos principais do footer */
+.footer {
+  
+  /* border-bottom: 1px solid #0056b3; */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+ width: 100%;
+ height:90%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footerColumn {
+  flex: 1;
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2vh;
+  margin-left: 0;
+}
+
+.footerTitle {
+    font-family:Proelium;
+    font-size:7vw;
+    background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1));
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+}
+
+.footerText {
+    font-family:SpaceGrotesk-VariableFont;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    
+}
+
+.footerList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footerList li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footerList li:hover{
+  background-color: #333;
+  color: var(--indigo);
+}
+
+.footerList li i {
+  margin-right: 8px;
+}
+
+.footerList a {
+    font-family:SpaceGrotesk-VariableFont;
+    color: white;
+    font-size: 5vw;
+    transition: 0.5s;
+}
+
+
+.footerList li:hover a{
+  color: #0056b3;
+}
+/* Links sociais */
+.socialLinks {
+width: 100%;
+  
+}
+.socialLinks .div_icons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socialLinks img{
+  display: none;
+}
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 2vw;
+  color: white;
+  font-size: 7vw;
+  border-radius: 4px;
+  
+}
+
+.socialLinks a:hover {
+  color: #007bff;
+
+
+}
+
+.footer .bi{
+    color: #007bff;
+}
+/* Copyright */
+.copyright {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: SpaceGrotesk-VariableFont;
+  font-size:3.5vw;
+  text-align: center;
+}
+}
+
+
+/* Estilos para tablets em modo retrato */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){
+    /* footer.module.css */
+.section{
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  z-index:1;
+}
+/* Estilos principais do footer */
+.footer {
+  
+  /* border-bottom: 1px solid #0056b3; */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+ width: 100%;
+ height:90%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footerColumn {
+  flex: 1;
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2vh;
+  margin-left: 0;
+}
+
+.footerTitle {
+    font-family:Proelium;
+    font-size:7vw;
+    background: linear-gradient(to left, rgba(0, 0, 255, 1), rgba(150, 0, 255, 1));
+  -webkit-background-clip: text; /* Para Safari */
+  -webkit-text-fill-color: transparent; /* Para Safari */
+  color: transparent; /* Para outros navegadores */
+  transition: none !important; /* Mantém a transição como none */
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+}
+
+.footerText {
+    font-family:SpaceGrotesk-VariableFont;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    
+}
+
+.footerList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footerList li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footerList li:hover{
+  background-color: #333;
+  color: var(--indigo);
+}
+
+.footerList li i {
+  margin-right: 8px;
+}
+
+.footerList a {
+    font-family:SpaceGrotesk-VariableFont;
+    color: white;
+    font-size: 5vw;
+    transition: 0.5s;
+}
+
+
+.footerList li:hover a{
+  color: #0056b3;
+}
+/* Links sociais */
+.socialLinks {
+width: 100%;
+  
+}
+.socialLinks .div_icons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.socialLinks img{
+  display: none;
+}
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 2vw;
+  color: white;
+  font-size: 7vw;
+  border-radius: 4px;
+  
+}
+
+.socialLinks a:hover {
+  color: #007bff;
+
+
+}
+
+.footer .bi{
+    color: #007bff;
+}
+/* Copyright */
+.copyright {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: SpaceGrotesk-VariableFont;
+  font-size:3.5vw;
+  text-align: center;
+}
+}

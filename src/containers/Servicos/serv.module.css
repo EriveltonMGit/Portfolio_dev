@@ -850,3 +850,870 @@
     }
   }
 }
+
+
+
+/* Estilos para celulares grandes em modo retrato */
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait){
+    /* AQUI FICA O CSS DO SERVICES */
+
+    .main {
+      width: 100%;
+      height: 320vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: 2vw;
+      margin-top: 10vh;
+      position: relative;
+    }
+    /* H1 */
+    .h1 {
+      position: absolute;
+      top: 0;
+      width: 90%;
+      height: 10%;
+      font-size: 8vw;
+      font-family: Proelium;
+      color: var(--white);
+    }
+  
+    /* .cards */
+    .cards {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      width: 80%;
+      height: 80vh;
+      border-radius: 4px;
+      border: 1px solid var(--gray);
+      background-image: linear-gradient(
+        10deg,
+        black 0%,
+        #000000dd 70%,
+        #00000032 100%
+      );
+      text-align: center;
+      padding: 1rem;
+      z-index: 2;
+      margin-top: 10vh;
+      transition: border 0.4s ease, border-image 0.4s ease;
+     
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease; 
+      perspective: 1000px; 
+      
+    }
+  
+    .cards:hover {
+      border: 1px solid transparent;
+      border-image: linear-gradient(45deg, #9600ff, #11b6b6) 1;
+    }
+  
+    /* img div*/
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 20%;
+     
+    }
+    .img img {
+      width: 13vw;
+    }
+    /* .h2 */
+    .h2 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 25%;
+      color: var(--white);
+      font-family: Purista;
+      font-size: 6vw;
+    }
+    /* .p */
+    .p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50%;
+      font-family: SpaceGrotesk-VariableFont;
+      font-size: 4vw;
+      color: var(--secondary);
+    }
+  
+    /* ANIMAÇÃO UX TEXTOS */
+    /* From Uiverse.io by Darlley */
+  
+    .section {
+      width: 90%;
+      height: 110vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 10vh;
+    }
+    /* animation_div */
+    .animation_div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .cursor,
+    .box,
+    .text {
+      cursor: pointer;
+    }
+    .cursor {
+      overflow: visible;
+      transform: translate3d(300px, 0, 0) scale(1);
+      transform-origin: center center;
+      transform-box: fill-box;
+      animation: cursor 5s ease infinite alternate;
+    }
+    @keyframes cursor {
+      0% {
+        opacity: 0;
+        transform: translate3d(300px, 0, 0) scale(1);
+      }
+      30% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+      60% {
+        opacity: 1;
+        transform: translate3d(-200px, -200px, 0) scale(1);
+      }
+  
+      /* clique */
+      65% {
+        opacity: 1;
+        transform: translate3d(-200px, -200px, 0) scale(0.95);
+      }
+      70% {
+        opacity: 1;
+        transform: translate3d(-200px, -200px, 0) scale(1);
+      }
+  
+      100% {
+        opacity: 1;
+        transform: translate3d(-300px, -50px, 0) scale(1);
+      }
+    }
+  
+    .box {
+      opacity: 0;
+      animation: box 5s ease infinite alternate;
+    }
+    @keyframes box {
+      0%,
+      60% {
+        opacity: 0;
+      }
+      65%,
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    /* AQUI FICA A IMG DO CARD  IMG DEVICE */
+  
+    .device {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   /*   .cellphone  */
+    .cellphone {
+      width: 60%;
+      height: 100%;
+      border: 5px solid black;
+      border-radius: 10px;
+      position: relative;
+      z-index: 5;
+      transition: 0.5s;
+      backdrop-filter: blur(8px);
+      background-image: url("/src/assets/image/transferir.jpg");
+      object-fit: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .cellphone:hover {
+      box-shadow: 10px 10px 1rem black;
+    }
+  
+  /* .screen */
+    .screen {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  /* .speaker */
+    .speaker {
+      width: 40px;
+      height: 5px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 4px;
+      position: absolute;
+      top: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    /* AQUI FICA OS ICONS DO RODAPE DO CELULAR */
+    .home_button {
+      width: 90%;
+      height: 6vh;
+      backdrop-filter: blur(10px);
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      bottom: 0;
+      border: 1px solid var(--gray);
+      margin-bottom: 1vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .home_button img {
+      width: 6vw;
+      transition: 0.5s;
+      object-fit: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .home_button img:hover {
+      filter: drop-shadow(1px 1px 0.3rem white);
+    }
+  /*  .app_icon device */
+    .app_icon {
+      width: 40px;
+      height: 40px;
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--gray);
+      border-radius: 12px;
+      color: white;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      font-size: 3vw;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .app_icon:hover {
+      scale: 1.1;
+      color: #11b6b6;
+      box-shadow: 1px 1px 1rem black;
+    }
+  
+    .app_grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+    }
+  
+  
+  
+    
+    /* MIDIA */
+    /* notfic */
+    .notfic {
+      border: 1px solid var(--gray);
+      height: 2vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      backdrop-filter: blur(5px);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 0.432);
+    }
+  
+    .notfic p {
+      color: rgb(0, 0, 0);
+      font-size: 2vw;
+    }
+    /* .notfic div */
+    .notfic div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5vw;
+      height: 100%;
+      margin-right: 1vw;
+      margin-left: 1vw;
+    }
+  
+    .notfic div i:nth-child(1) {
+      color: rgb(2, 2, 2);
+      font-size: 2vw;
+    }
+    .notfic div i:nth-child(2) {
+      color: rgb(2, 2, 2);
+      font-size: 2vw;
+    }
+    .notfic div i:nth-child(3) {
+      color: rgb(59, 253, 0);
+      font-size: 2vw;
+    }
+  
+  
+    .mediaPlayer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin-left: 5%;
+      height: 15vh;
+      padding: 0.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 24vh;
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--gray);
+    }
+    
+  
+    .mediaPlayer button {
+      padding: 0.5rem;
+      width: 20vw;
+      font-size: 4vw;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      border: 1px solid var(--gray);
+      color: white;
+      transition: background-color 0.3s;
+    }
+  
+    .mediaPlayer button:hover {
+      background-color: #0075ff;
+      color: #f9f9f9;
+    }
+    /*  .mediaPlayer .gif */
+    .mediaPlayer .gif{
+      width: 6vw;
+    }
+  
+    .progressContainer {
+      width: 80%;
+    }
+  
+    .progressBar {
+      width: 100%;
+    }
+  
+    .timeDisplay {
+      margin-top: 10px;
+      font-size: 4vw;
+      color: #ffffff;
+    }
+  
+    /* .midia_2 */
+    .midia_2 {
+      border: 1px solid var(--gray);
+      height: 6vh;
+      border-radius: 4px;
+      width: 90%;
+      position: absolute;
+      margin-top: 40vh;
+      backdrop-filter: blur(5px);
+    }
+    /* TEXTO ANIMADO */
+    .div_texto_animado {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border-radius: 0px 0px 10px 10px;
+    }
+  
+    /* TEXTO ANIMADO MSG */
+    .msg_texto {
+      display: inline-block;
+      padding-left: 60%;
+      white-space: nowrap;
+      animation: rolarTexto 80s linear infinite;
+      font-family: SpaceGrotesk-VariableFont;
+      font-size: 4vw;
+      z-index: 3;
+      transition: animation 0.5s ease;
+      color: var(--white);
+    }
+  
+    @keyframes rolarTexto {
+      0% {
+        transform: translateX(50%);
+      }
+  
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+}
+
+/* Estilos para tablets em modo retrato */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){
+   /* AQUI FICA O CSS DO SERVICES */
+
+   .main {
+    width: 100%;
+    height: 320vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 10vh;
+    position: relative;
+  }
+  /* H1 */
+  .h1 {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 10%;
+    font-size: 8vw;
+    font-family: Proelium;
+    color: var(--white);
+  }
+
+  /* .cards */
+  .cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80vh;
+    border-radius: 4px;
+    border: 1px solid var(--gray);
+    background-image: linear-gradient(
+      10deg,
+      black 0%,
+      #000000dd 70%,
+      #00000032 100%
+    );
+    text-align: center;
+    padding: 1rem;
+    z-index: 2;
+    margin-top: 10vh;
+    transition: border 0.4s ease, border-image 0.4s ease;
+   
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease; 
+    perspective: 1000px; 
+    
+  }
+
+  .cards:hover {
+    border: 1px solid transparent;
+    border-image: linear-gradient(45deg, #9600ff, #11b6b6) 1;
+  }
+
+  /* img div*/
+  .img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+   
+  }
+  .img img {
+    width: 13vw;
+  }
+  /* .h2 */
+  .h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25%;
+    color: var(--white);
+    font-family: Purista;
+    font-size: 6vw;
+  }
+  /* .p */
+  .p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    font-family: SpaceGrotesk-VariableFont;
+    font-size: 4vw;
+    color: var(--secondary);
+  }
+
+  /* ANIMAÇÃO UX TEXTOS */
+  /* From Uiverse.io by Darlley */
+
+  .section {
+    width: 90%;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+  /* animation_div */
+  .animation_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .cursor,
+  .box,
+  .text {
+    cursor: pointer;
+  }
+  .cursor {
+    overflow: visible;
+    transform: translate3d(300px, 0, 0) scale(1);
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: cursor 5s ease infinite alternate;
+  }
+  @keyframes cursor {
+    0% {
+      opacity: 0;
+      transform: translate3d(300px, 0, 0) scale(1);
+    }
+    30% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    60% {
+      opacity: 1;
+      transform: translate3d(-200px, -200px, 0) scale(1);
+    }
+
+    /* clique */
+    65% {
+      opacity: 1;
+      transform: translate3d(-200px, -200px, 0) scale(0.95);
+    }
+    70% {
+      opacity: 1;
+      transform: translate3d(-200px, -200px, 0) scale(1);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate3d(-300px, -50px, 0) scale(1);
+    }
+  }
+
+  .box {
+    opacity: 0;
+    animation: box 5s ease infinite alternate;
+  }
+  @keyframes box {
+    0%,
+    60% {
+      opacity: 0;
+    }
+    65%,
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* AQUI FICA A IMG DO CARD  IMG DEVICE */
+
+  .device {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ /*   .cellphone  */
+  .cellphone {
+    width: 60%;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    transition: 0.5s;
+    backdrop-filter: blur(8px);
+    background-image: url("/src/assets/image/transferir.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .cellphone:hover {
+    box-shadow: 10px 10px 1rem black;
+  }
+
+/* .screen */
+  .screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+/* .speaker */
+  .speaker {
+    width: 40px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  /* AQUI FICA OS ICONS DO RODAPE DO CELULAR */
+  .home_button {
+    width: 90%;
+    height: 6vh;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    border: 1px solid var(--gray);
+    margin-bottom: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .home_button img {
+    width: 6vw;
+    transition: 0.5s;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .home_button img:hover {
+    filter: drop-shadow(1px 1px 0.3rem white);
+  }
+/*  .app_icon device */
+  .app_icon {
+    width: 40px;
+    height: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--gray);
+    border-radius: 12px;
+    color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 3vw;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .app_icon:hover {
+    scale: 1.1;
+    color: #11b6b6;
+    box-shadow: 1px 1px 1rem black;
+  }
+
+  .app_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+
+  
+  /* MIDIA */
+  /* notfic */
+  .notfic {
+    border: 1px solid var(--gray);
+    height: 2vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(5px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.432);
+  }
+
+  .notfic p {
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+  }
+  /* .notfic div */
+  .notfic div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    height: 100%;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+
+  .notfic div i:nth-child(1) {
+    color: rgb(2, 2, 2);
+    font-size: 2vw;
+  }
+  .notfic div i:nth-child(2) {
+    color: rgb(2, 2, 2);
+    font-size: 2vw;
+  }
+  .notfic div i:nth-child(3) {
+    color: rgb(59, 253, 0);
+    font-size: 2vw;
+  }
+
+
+  .mediaPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    height: 15vh;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 24vh;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--gray);
+  }
+  
+
+  .mediaPlayer button {
+    padding: 0.5rem;
+    width: 20vw;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    color: white;
+    transition: background-color 0.3s;
+  }
+
+  .mediaPlayer button:hover {
+    background-color: #0075ff;
+    color: #f9f9f9;
+  }
+  /*  .mediaPlayer .gif */
+  .mediaPlayer .gif{
+    width: 6vw;
+  }
+
+  .progressContainer {
+    width: 80%;
+  }
+
+  .progressBar {
+    width: 100%;
+  }
+
+  .timeDisplay {
+    margin-top: 10px;
+    font-size: 4vw;
+    color: #ffffff;
+  }
+
+  /* .midia_2 */
+  .midia_2 {
+    border: 1px solid var(--gray);
+    height: 6vh;
+    border-radius: 4px;
+    width: 90%;
+    position: absolute;
+    margin-top: 40vh;
+    backdrop-filter: blur(5px);
+  }
+  /* TEXTO ANIMADO */
+  .div_texto_animado {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  /* TEXTO ANIMADO MSG */
+  .msg_texto {
+    display: inline-block;
+    padding-left: 60%;
+    white-space: nowrap;
+    animation: rolarTexto 80s linear infinite;
+    font-family: SpaceGrotesk-VariableFont;
+    font-size: 4vw;
+    z-index: 3;
+    transition: animation 0.5s ease;
+    color: var(--white);
+  }
+
+  @keyframes rolarTexto {
+    0% {
+      transform: translateX(50%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
