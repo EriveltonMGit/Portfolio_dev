@@ -145,7 +145,7 @@ function Tecnologias() {
           <h3>Sobre minhas Habilidades</h3>
           <p>
             Neste painel, apresento as principais tecnologias e ferramentas que
-            utilizo em meus projetos. Minha formação abrange desde linguagens e
+            utilizo nos meus projetos. Minha formação abrange desde linguagens e
             bibliotecas front-end, como React e Angular, até frameworks de
             design responsivo, como Bootstrap e Tailwind CSS, que me ajudam a
             criar interfaces modernas e dinâmicas.
