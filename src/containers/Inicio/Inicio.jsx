@@ -15,6 +15,7 @@ import FrameImg from "../../assets/frame/boll_animation.gif"
 
 
 function Inicio() {
+  
   return (
     <section className={styles.inicio} id="inicio"
      data-aos="zoom-out-down" data-aos-duration="1000"
@@ -37,10 +38,10 @@ function Inicio() {
             <TypingEffect  />
           </h1>
           <button className={styles.btn_compartilhar}>
-            Compartilhar <i className="bi bi-arrow-right "></i>
+            <a href="https://github.com/EriveltonMGit/EriveltonMGit">Compartilhar</a> <i className="bi bi-arrow-right "></i>
           </button>
           <button className={styles.btn_cv}>
-            Download CV<i className="bi bi-file-earmark-text"></i>
+            <a href="https://drive.google.com/uc?export=download&id=1sEQiuiZWSWkV2MxaHqLsGsdw6obs8Xos">Download CV<i className="bi bi-file-earmark-text"></i></a> 
           </button>
         </div>
 

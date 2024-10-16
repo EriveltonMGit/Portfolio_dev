@@ -76,16 +76,16 @@ function Footer() {
               {/*  */}
               <div className={Style.div_icons}>
                  <a
-                href="https://wa.me/5561981579569"
+                href="https://api.whatsapp.com/send?phone=5561981579569&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho!"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="bi bi-whatsapp"></i>
               </a>
-              <a href="#!" className={Style.socialIcon}>
+              <a href="https://github.com/EriveltonMGit/EriveltonMGit" className={Style.socialIcon}>
                 <i className="bi bi-github"></i>
               </a>
-              <a href="#!" className={Style.socialIcon}>
+              <a href="https://www.linkedin.com/in/erivelton-magalh%C3%A3es-553a6b215/" className={Style.socialIcon}>
                 <i className="bi bi-linkedin"></i>
               </a>
               <a
