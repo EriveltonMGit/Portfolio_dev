@@ -11,7 +11,8 @@ import Img4 from '../../assets/icons/icons_servicos/icons_device/camera.png'
 // import Img6 from '../../assets/icons/icons_servicos/icons_device/app-store.png'
 // import Img7 from '../../assets/icons/icons_servicos/icons_device/settings.png'
 // import Img8 from '../../assets/icons/icons_servicos/icons_device/camera.png'
-
+// MIDIA PLAYER 
+import MediaPlayer from "./MediaPlayer";
 function UX_Animation() {
   return (
     <section className={style.section}
@@ -187,7 +188,8 @@ function UX_Animation() {
                 {/* AQUI FICA OS MINIS CARDS  */}
                 <div className={style.midia}>
 
-           {/* <img src={Img_MidiaPlayer} alt="" /> */}
+           {/* Renderiza o MediaPlayer */}
+      <MediaPlayer />
                   
                 </div>
                 <div className={style.midia_2}>

@@ -162,14 +162,10 @@
   justify-content: center;
   z-index: 10;
   transition: 0.5s;
-  
-
 }
 
 .cellphone:hover {
-  
-rotate: 5deg;
- 
+  rotate: 5deg;
 }
 
 /* SMART PHONE  */
@@ -191,13 +187,10 @@ rotate: 5deg;
   box-shadow: 10px 10px 1rem black;
 }
 
-
 /* .cellphone:hover .home_button{
 
   
 } */
-
-
 
 .screen {
   width: 100%;
@@ -326,17 +319,54 @@ rotate: 5deg;
 /* .midia */
 .midia {
   border: 1px solid var(--gray);
-  height: 20vh;
+  height: 18vh;
   border-radius: 4px;
   width: 90%;
   position: absolute;
   margin-top: 20vh;
   backdrop-filter: blur(5px);
-  background-image: url('/src//assets//icons/icons_servicos/icons_device/midia_player.jpg');
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+.mediaPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.mediaPlayer button {
+  padding: 0.3rem;
+  width: 5vw;
+  font-size: 1.3vw;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid var(--gray);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.mediaPlayer button:hover {
+  background-color: #11b6b6;
+  color: #f9f9f9;
+}
+
+.progressContainer {
+  width: 80%;
+}
+
+.progressBar {
+  width: 100%;
+}
+
+.timeDisplay {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 /* .midia_2 */
@@ -349,8 +379,6 @@ rotate: 5deg;
   margin-top: 43vh;
   backdrop-filter: blur(5px);
 }
-
-
 
 /* TEXTO ANIMADO */
 .div_texto_animado {
@@ -365,15 +393,13 @@ rotate: 5deg;
   border-radius: 0px 0px 10px 10px;
 }
 
-
-
 /* TEXTO ANIMADO MSG */
 .msg_texto {
   display: inline-block;
   padding-left: 100%;
   white-space: nowrap;
   animation: rolarTexto 60s linear infinite;
-  font-family:SpaceGrotesk-VariableFont;
+  font-family: SpaceGrotesk-VariableFont;
   font-size: 1vw;
   z-index: 3;
   transition: animation 0.5s ease;
@@ -382,23 +408,13 @@ rotate: 5deg;
 
 @keyframes rolarTexto {
   0% {
-      transform: translateX(50%);
+    transform: translateX(50%);
   }
 
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 /* MIDIA SCREN 480PX */
 @media (max-width: 480px) {
@@ -598,15 +614,12 @@ rotate: 5deg;
     scale: 1.2;
     rotate: 0deg;
   }
-  
- 
+
   /* .cellphone:hover .home_button{
   
     
   } */
-  
-  
-  
+
   .screen {
     width: 100%;
     height: 100%;
@@ -617,7 +630,7 @@ rotate: 5deg;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .speaker {
     width: 40px;
     height: 5px;
@@ -656,7 +669,7 @@ rotate: 5deg;
   .home_button img:hover {
     filter: drop-shadow(1px 1px 0.3rem white);
   }
-  
+
   .app_icon {
     width: 40px;
     height: 40px;
@@ -678,7 +691,7 @@ rotate: 5deg;
     color: #11b6b6;
     box-shadow: 1px 1px 1rem black;
   }
-  
+
   .app_grid {
     display: flex;
     flex-wrap: wrap;
@@ -686,7 +699,7 @@ rotate: 5deg;
     align-items: center;
     padding: 20px;
   }
-  
+
   /* MIDIA */
   /* notfic */
   .notfic {
@@ -696,12 +709,14 @@ rotate: 5deg;
     position: absolute;
     top: 0;
     backdrop-filter: blur(5px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.432);
   }
-  
+
   .notfic p {
     color: rgb(0, 0, 0);
     font-size: 2vw;
@@ -716,7 +731,7 @@ rotate: 5deg;
     margin-right: 1vw;
     margin-left: 1vw;
   }
-  
+
   .notfic div i:nth-child(1) {
     color: rgb(2, 2, 2);
     font-size: 2vw;
@@ -729,20 +744,61 @@ rotate: 5deg;
     color: rgb(59, 253, 0);
     font-size: 2vw;
   }
-  
+
+  /* .midia */
   /* .midia */
   .midia {
     border: 1px solid var(--gray);
-    height: 15vh;
+    height: 18vh;
     border-radius: 4px;
     width: 90%;
     position: absolute;
-    margin-top: 23vh;
-    background-image: url('/src//assets//icons/icons_servicos/icons_device/midia_player.jpg');
-    object-fit: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin-top: 20vh;
+    backdrop-filter: blur(5px);
   }
+  .mediaPlayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .mediaPlayer button {
+    padding: 0.5rem;
+    width: 10vw;
+    font-size: 4vw;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    color: white;
+    transition: background-color 0.3s;
+  }
+
+  .mediaPlayer button:hover {
+    background-color: #0075ff;
+    color: #f9f9f9;
+  }
+
+  .progressContainer {
+    width: 80%;
+  }
+
+  .progressBar {
+    width: 100%;
+  }
+
+  .timeDisplay {
+    margin-top: 10px;
+    font-size: 4vw;
+    color: #ffffff;
+  }
+
   /* .midia_2 */
   .midia_2 {
     border: 1px solid var(--gray);
@@ -752,44 +808,40 @@ rotate: 5deg;
     position: absolute;
     margin-top: 40vh;
     backdrop-filter: blur(5px);
-  
   }
   /* TEXTO ANIMADO */
-.div_texto_animado {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  border-radius: 0px 0px 10px 10px;
-}
+  .div_texto_animado {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+  }
 
+  /* TEXTO ANIMADO MSG */
+  .msg_texto {
+    display: inline-block;
+    padding-left: 60%;
+    white-space: nowrap;
+    animation: rolarTexto 60s linear infinite;
+    font-family: SpaceGrotesk-VariableFont;
+    font-size: 4vw;
+    z-index: 3;
+    transition: animation 0.5s ease;
+    color: var(--white);
+  }
 
-
-/* TEXTO ANIMADO MSG */
-.msg_texto {
-  display: inline-block;
-  padding-left: 60%;
-  white-space: nowrap;
-  animation: rolarTexto 60s linear infinite;
-  font-family:SpaceGrotesk-VariableFont;
-  font-size: 4vw;
-  z-index: 3;
-  transition: animation 0.5s ease;
-  color: var(--white);
-}
-
-@keyframes rolarTexto {
-  0% {
+  @keyframes rolarTexto {
+    0% {
       transform: translateX(50%);
-  }
+    }
 
-  100% {
+    100% {
       transform: translateX(-100%);
+    }
   }
-}
-
 }
