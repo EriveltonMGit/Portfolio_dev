@@ -610,8 +610,8 @@
     background-repeat: no-repeat;
   }
   .cellphone:hover {
-    box-shadow: 10px 10px 1rem black;
-    scale: 1.2;
+    box-shadow:  none;
+    
     rotate: 0deg;
   }
 
@@ -753,7 +753,7 @@
     border-radius: 4px;
     width: 90%;
     position: absolute;
-    margin-top: 23vh;
+    margin-top: 25vh;
     backdrop-filter: blur(5px);
   }
   .mediaPlayer {
@@ -765,6 +765,7 @@
     padding: 0.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 4;
   }
 
   .mediaPlayer button {
