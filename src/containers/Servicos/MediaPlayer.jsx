@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
 import style from "./serv.module.css";
+// IMG GIF
+import Gif from '../../assets/frame/musica-music.gif'
 
 const MediaPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -49,6 +51,7 @@ const MediaPlayer = () => {
       <div className={style.mediaPlayer}>
         <button onClick={togglePlayPause} className="btn">
           <i className={`bi ${isPlaying ? 'bi-pause' : 'bi-play'}`}></i>
+          <img className={style.gif} src={Gif} alt="" />
         </button>
         <audio 
           ref={audioRef} 
