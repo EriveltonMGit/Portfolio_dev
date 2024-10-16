@@ -56,7 +56,7 @@ const MediaPlayer = () => {
           onTimeUpdate={handleTimeUpdate} 
           onLoadedMetadata={handleLoadedMetadata}
         >
-          <source src="/src/assets/frame/That'sWhatILike.mp3" type="audio/mp3" />
+          <source src="/src/assets/frame/Infraction_-_Rich.mp3" type="audio/mp3" />
           Seu navegador não suporta o elemento de áudio.
         </audio>
         <div className={style.progressContainer}>
