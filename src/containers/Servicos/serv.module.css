@@ -603,7 +603,7 @@
     align-items: center;
     justify-content: center;
   }
-
+ 
   .cellphone {
     width: 60%;
     height: 100%;
@@ -619,9 +619,7 @@
     background-repeat: no-repeat;
   }
   .cellphone:hover {
-    box-shadow:  none;
-    
-    rotate: 0deg;
+    box-shadow: 10px 10px 1rem black;
   }
 
   /* .cellphone:hover .home_button{
@@ -785,6 +783,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid var(--gray);
   }
+  
 
   .mediaPlayer button {
     padding: 0.5rem;
