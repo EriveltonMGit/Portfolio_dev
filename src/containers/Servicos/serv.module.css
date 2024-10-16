@@ -317,7 +317,7 @@
 }
 
 /* .midia */
-.midia {
+/* .midia {
   border: 1px solid var(--gray);
   height: 18vh;
   border-radius: 4px;
@@ -325,7 +325,7 @@
   position: absolute;
   margin-top: 20vh;
   backdrop-filter: blur(5px);
-}
+} */
 .mediaPlayer {
   display: flex;
   flex-direction: column;
@@ -335,6 +335,10 @@
   padding: 0.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 25vh;
 }
 
 .mediaPlayer button {
@@ -747,7 +751,7 @@
 
   /* .midia */
  
-  .midia {
+  /* .midia {
     border: 1px solid var(--gray);
     height: 15vh;
     border-radius: 5px;
@@ -755,7 +759,7 @@
     position: absolute;
     margin-top: 25vh;
     backdrop-filter: blur(5px);
-  }
+  } */
   .mediaPlayer {
     display: flex;
     flex-direction: column;
@@ -765,7 +769,10 @@
     padding: 0.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 25vh;
   }
 
   .mediaPlayer button {
