@@ -29,7 +29,7 @@ function Inicio() {
         <div className={style.titulo}>
           <div className={styles.p}>
             
-            <p> REACT DEVELOPMENT <img src={ImgRotate} alt="" /> </p>
+            <p> REACT DEVELOPMENT <img src={ImgRotate} alt="Imagem da logo react" /> </p>
           </div>
 
 
@@ -38,7 +38,7 @@ function Inicio() {
             <TypingEffect  />
           </h1>
           <button className={styles.btn_compartilhar}>
-            <a href="https://github.com/EriveltonMGit/EriveltonMGit">Compartilhar</a> <i className="bi bi-arrow-right "></i>
+            <a href="https://github.com/EriveltonMGit/EriveltonMGit" alt="Botão para o GitHub">GitHub</a> <i className="bi bi-arrow-right "></i>
           </button>
           <button className={styles.btn_cv}>
             <a href="https://drive.google.com/uc?export=download&id=1sEQiuiZWSWkV2MxaHqLsGsdw6obs8Xos">Download CV<i className="bi bi-file-earmark-text"></i></a> 
@@ -93,16 +93,16 @@ function Inicio() {
       <div className={styles.icons_social} data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" data-aos-duration="3000">
      
-          <a href="https://api.whatsapp.com/send?phone=5561981579569&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho!">
+          <a href="https://api.whatsapp.com/send?phone=5561981579569&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho!" alt="Link Whatsapp">
             <i className="bi bi-whatsapp"></i>
           </a>
-          <a href="https://www.linkedin.com/in/erivelton-magalh%C3%A3es-553a6b215/">
+          <a href="https://www.linkedin.com/in/erivelton-magalh%C3%A3es-553a6b215/" alt="Link Linkedin">
             <i className="bi bi-linkedin"></i>
           </a>
-          <a href="https://github.com/EriveltonMGit/EriveltonMGit">
+          <a href="https://github.com/EriveltonMGit/EriveltonMGit" alt="Link GitHub">
             <i className="bi bi-github"></i>
           </a>
-          <a href="https://web-desing-page.netlify.app/">
+          <a href="https://web-desing-page.netlify.app/" alt="Link Do site do Desenvolvedor">
             <i className="bi bi-code-square"></i>
           </a>
         
@@ -117,7 +117,7 @@ function Inicio() {
 
         
       </main>
-      <a href="#sobre"  className={styles.arrow} >
+      <a href="#sobre"  className={styles.arrow} alt="seta Sobre">
       <IoIosArrowDown/>  
       </a>
       

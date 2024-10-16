@@ -64,55 +64,56 @@ function Nav() {
       <SpanBorder />
       <div className={style.logo}>
         <a href="https://web-desing-page.netlify.app/">
-          <img src={Logo} className={style.logo_img} alt="" />
+          <img src={Logo} className={style.logo_img} alt="Imagem Logo do Site Digital Dream + Link para o Site Digital Dream" />
         </a>
       </div>
 
       <NavBar>
         <li>
-          <a href="#inicio" onClick={handleSmoothScroll}>
+          <a href="#inicio" onClick={handleSmoothScroll} alt="Link Início">
             <i className="bi bi-house"></i>Início
           </a>
         </li>
         <li>
-          <a href="#sobre" onClick={handleSmoothScroll}>
+          <a href="#sobre" onClick={handleSmoothScroll} alt="Link Sobre">
             <i className="bi bi-file-earmark-person-fill"></i>Sobre
           </a>
         </li>
         <li>
-          <a href="#tecnologias" onClick={handleSmoothScroll}>
+          <a href="#tecnologias" onClick={handleSmoothScroll} alt="Link Tecnologias">
             <i className="bi bi-card-checklist"></i>Tecnologias
           </a>
         </li>
         <li>
-          <a href="#projetos" onClick={handleSmoothScroll}>
+          <a href="#projetos" onClick={handleSmoothScroll} alt="Link Projetos">
             <i className="bi bi-star text"></i>Projetos
           </a>
         </li>
         <li>
-          <a href="#" onClick={chatSite}>
+          <a href="#" onClick={chatSite} alt="Link Para o Site Digital Dream">
             <i className="bi bi-substack"></i>Site
           </a>
         </li>
         <li>
-          <a href="#servicos" onClick={handleSmoothScroll}>
+          <a href="#servicos" onClick={handleSmoothScroll} alt="Link Serviços">
             <i className="bi bi-ui-radios-grid"></i>Serviços
           </a>
         </li>
         <li>
-          <a href="#contato" onClick={handleSmoothScroll}>
+          <a href="#contato" onClick={handleSmoothScroll} alt="Link Contato">
             <i className="bi bi-person-lines-fill"></i>Contato
           </a>
         </li>
       </NavBar>
 
       {/* BUTTON DEVICE */}
-      <button className={style.btn_device} onClick={toggleMenu}>
+      <button className={style.btn_device} onClick={toggleMenu} alt="Botão para abrir o menu Device">
         <i className="bi bi-list"></i>
       </button>
 
       {/* AQUI FICA O ÍCONE DA LUA E SOL */}
-      <button className={style.lua}>
+      <button className={style.lua}
+      >
         <i className="bi bi-moon-stars-fill"></i>
       </button>
       <button className={style.sol}>
@@ -123,6 +124,7 @@ function Nav() {
       <div
         id="menu"
         className={`${style.menu_device} ${menuOpen ? style.menu_open : ""}`}
+        alt="Menu Device"
       >
         <div className={style.text_menu_device}>
           <i className="bi bi-grid-1x2-fill"></i>
@@ -130,37 +132,37 @@ function Nav() {
         </div>
         <div className={style.device_ul}>
           <li>
-            <a href="#inicio" onClick={handleSmoothScroll}>
+            <a href="#inicio" onClick={handleSmoothScroll} alt="Link Início">
               <i className="bi bi-house"></i>Início
             </a>
           </li>
           <li>
-            <a href="#sobre" onClick={handleSmoothScroll}>
+            <a href="#sobre" onClick={handleSmoothScroll} alt="Link Sobre">
               <i className="bi bi-file-person"></i>Sobre
             </a>
           </li>
           <li>
-            <a href="#tecnologias" onClick={handleSmoothScroll}>
+            <a href="#tecnologias" onClick={handleSmoothScroll} alt="Link Tecnologias">
               <i className="bi bi-card-checklist"></i>Tecnologias
             </a>
           </li>
           <li>
-            <a href="#projetos" onClick={handleSmoothScroll}>
+            <a href="#projetos" onClick={handleSmoothScroll} alt="Link Projetos">
               <i className="bi bi-star text"></i>Projetos
             </a>
           </li>
           <li>
-            <a href="#" onClick={chatSite}>
+            <a href="#" onClick={chatSite} alt="Link Site do Desenvolvedor">
               <i className="bi bi-substack"></i>Site
             </a>
           </li>
           <li>
-            <a href="#servicos" onClick={handleSmoothScroll}>
+            <a href="#servicos" onClick={handleSmoothScroll} alt="Link Serviços">
               <i className="bi bi-ui-radios-grid"></i>Serviços
             </a>
           </li>
           <li>
-            <a href="#contato" onClick={handleSmoothScroll}>
+            <a href="#contato" onClick={handleSmoothScroll} alt="Link Contato">
               <i className="bi bi-chat-square-text"></i>Contato
             </a>
           </li>
