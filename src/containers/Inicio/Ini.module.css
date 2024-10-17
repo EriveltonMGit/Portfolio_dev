@@ -29,8 +29,9 @@
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
-  z-index: 3;
+  z-index: 7;
   flex-wrap: wrap;
+  
 }
 
 /* spam border */
@@ -337,7 +338,7 @@ transition: 0.7s;
   background-size: cover;
   filter: grayscale(0%) brightness(60%);
   filter: hue-rotate(250deg);
-  
+  z-index: 10;
 }
 
 /*  AQUI FICA O ICON SETA - ARROW */
